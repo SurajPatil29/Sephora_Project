@@ -1,0 +1,503 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+
+}
+hr{
+    margin: 25px 0;
+}
+
+/* header start */
+
+/* headOffer */
+#headOffer {
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(197, 185, 223);
+}
+
+#headOffer>img {
+    height: 60px;
+}
+
+#headOffer>a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+#headOffer>a>span {
+    font-weight: lighter;
+}
+
+#headOffer>a:hover {
+    text-decoration: underline;
+}
+
+/* headOffer */
+
+/* headseach */
+#headSearch {
+    display: flex;
+    padding: 15px 10%;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#headSearch>div:nth-child(2)>input {
+    border-radius: 25px;
+    padding: 10px;
+    width: 400px;
+}
+
+#headSearch a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* headseach */
+
+/* navBar */
+#navBar {
+    padding: 10px 10%;
+    background-color: black;
+}
+
+#nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 0;
+}
+
+#nav-list li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#nav-list li a:hover {
+    text-decoration: underline;
+}
+
+/* navBar */
+
+
+/* topSlider */
+.topSlider {
+    flex-grow: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 5px;
+    /* width: 100%;  */
+}
+
+.topSlider::-webkit-scrollbar {
+    /* Hide scrollbar */
+    display: none;
+}
+
+.topSlider>div {
+    flex: 0 0 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    /* margin-right: 20px; */
+}
+
+.topSlider>div>div {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.topSlider>div:nth-child(1) div {
+    background-color: #944E4E;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(2) div {
+    background-color: #000000;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(3) div {
+    background-color: #8A3053;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(4) div {
+    background-color: #000000;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(5) div {
+    background-color: #DCADA3;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(6) div {
+    background-color: #944E4E;
+    padding: 21px;
+}
+
+.topSlider>div:nth-child(-n+4) div h3,
+.topSlider>div:nth-child(-n+4) div p,
+.topSlider>div:nth-child(-n+4) div h4,
+.topSlider>div:nth-child(6) div h3,
+.topSlider>div:nth-child(6) div p,
+.topSlider>div:nth-child(6) div h4 {
+    color: white;
+}
+
+.topSlider>div:nth-child(-n+6) div h3,
+.topSlider>div:nth-child(-n+6) div p,
+.topSlider>div:nth-child(-n+6) div h4 {
+    margin: 0;
+}
+
+.topSlider>div:nth-child(-n+6) div p {
+    padding: 3px 0 10px 0;
+}
+
+/* topSlider */
+
+
+/* buttons */
+.buttons {
+    flex-direction: column;
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: auto;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none;
+
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* buttons */
+
+
+/* topSlider1*/
+.topSlider1 {
+    display: flex;
+    margin: 25px 0;
+    gap: 5px;
+}
+
+.topSlider1 > div {
+    margin: 7px 0;
+    box-sizing: border-box;
+
+}
+
+.topSlider1>div:nth-child(1) div {
+    background-color: #A2A5C8;
+    padding: 21px;
+}
+
+.topSlider1>div:nth-child(2) div {
+    background-color: #F6E8CE;
+    padding: 21px;
+}
+
+.topSlider1>div:nth-child(3) div {
+    background-color: #DFAEB1;
+    padding: 21px;
+}
+
+.topSlider1>div:nth-child(-n+6) div h3,
+.topSlider1>div:nth-child(-n+6) div p,
+.topSlider1>div:nth-child(-n+6) div h4 {
+    margin: 0;
+}
+
+.topSlider1>div:nth-child(-n+6) div p {
+    padding: 3px 0 10px 0;
+}
+
+/* topSlider1*/
+
+
+/* topSlider2*/
+
+.topSlider2 {
+    display: flex;
+    margin: 25px 0;
+    gap: 5px;
+}
+
+.topSlider2 > div {
+    margin: 7px 0;
+    box-sizing: border-box;
+
+}
+
+.topSlider2>div:nth-child(1) div {
+    background-color: #97B9AB;
+    padding: 21px;
+}
+
+.topSlider2>div:nth-child(2) div {
+    background-color: #D2E4F5;
+    padding: 21px;
+}
+
+.topSlider2>div:nth-child(3) div {
+    background-color: #BDDCEE;
+    padding: 21px;
+}
+
+.topSlider2>div:nth-child(-n+6) div h3,
+.topSlider2>div:nth-child(-n+6) div p,
+.topSlider2>div:nth-child(-n+6) div h4 {
+    margin: 0;
+}
+
+.topSlider2>div:nth-child(-n+6) div p {
+    padding: 3px 0 10px 0;
+}
+
+/* topSlider2*/
+
+
+/* productSlider class*/
+
+#productsBody {
+    margin: 50px 7%;
+}
+
+.productSlider {
+    flex-grow: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 10px; */
+    /* width: 100%;  */
+}
+
+.productSlider::-webkit-scrollbar {
+    /* Hide scrollbar */
+    display: none;
+}
+
+.productSlider>div {
+    flex: 0 0 calc(100% /5);
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.productSlider>div:nth-child(-n+10) div h5,
+.productSlider>div:nth-child(-n+10) div p,
+.productSlider>div:nth-child(-n+10) div h4 {
+    margin: 0;
+}
+
+.productSlider>div:nth-child(-n+6) div p {
+    padding: 3px 0 10px 0;
+    font-size: 14px;
+}
+
+.productSlider>div>div {
+    width: 100%;
+}
+
+/* productSlider class*/
+
+
+/* buttons1 */
+
+.prev1,
+.next1 {
+    cursor: pointer;
+    position: absolute;
+    margin-bottom: auto;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    -webkit-user-select: none;
+    /* Safari */
+    user-select: none;
+
+}
+
+.next1 {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev1:hover,
+.next1:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* buttons1 */
+
+/* Beuty offers */
+
+.productOffers {
+    flex-grow: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 10px; */
+    /* width: 100%;  */
+}
+
+.productOffers::-webkit-scrollbar {
+    /* Hide scrollbar */
+    display: none;
+}
+
+.productOffers>div {
+    flex: 0 0 calc(100% /5);
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 7px 5px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.productOffers>div>div {
+    width: 100%;
+    padding: 16px;
+
+}
+
+.productOffers>div:nth-child(-n+12) div h4,
+.productOffers>div:nth-child(-n+12) div p{
+    margin: 0;
+}
+
+.productOffers div p:nth-of-type(1) {
+    padding: 3px 0 6px 0;
+    font-size: 14px;
+}
+
+.productOffers div p:nth-of-type(2),
+.productOffers div p:nth-of-type(3) {
+    padding: 3px 0 6px 0;
+
+    font-size: 12px;
+}
+
+.productOffers>div:nth-child(-n+12) div button {
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Beuty offers */
+
+
+/* Beauty Insider */
+
+.productReward {
+    flex-grow: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 10px; */
+    /* width: 100%;  */
+}
+
+.productReward::-webkit-scrollbar {
+    /* Hide scrollbar */
+    display: none;
+}
+
+.productReward>div {
+    flex: 0 0 calc(100% /5);
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 7px;
+    padding: 16px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.productReward>div>div {
+    width: 100%;
+    padding: 16px;
+
+}
+
+.productReward>div:nth-child(-n+10) div h5,
+.productReward>div:nth-child(-n+10) div p,
+.productReward>div:nth-child(-n+10) div h4{
+    margin: 0;
+}
+
+.productReward>div:nth-child(-n+10) div p {
+    margin: 3px 0 7px 0;
+    font-size: 14px;
+}
+
+.productReward>div:nth-child(-n+10) div button {
+    font-size: 12px;
+}
+
+.productReward>div:nth-child(-n+12) div button {
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+/* Beauty Insider */
+

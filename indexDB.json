@@ -1,0 +1,752 @@
+[
+    {
+        "id": 1,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/2024-04-03-slotting-just-arrived-v3-site-rwd-home-page-hero-banner-US-CA-handoff_01.jpg?imwidth=315",
+        "heading": "The Latest Lineup",
+        "discription": "New beauty from the hottest brands.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": 2,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/homepage/031524/2024-april-skin-story-rwd-hero-banner-brightening-us-release-image-only-2000x2000.jpeg?imwidth=315",
+        "heading": "Glow Fast",
+        "discription": "With powerful formulas for dullnes and dark spots.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": 3,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/2024-4-2-rare-beauty-fos-soft-pinch-powder-blush-site-app-home-page-rwd-hero-banner-1200x800-en-us-can.jpg?imwidth=315",
+        "heading": "Just In Rare Beauty",
+        "discription": "Get glowy flush of color with this sliky-smooth formula.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": 4,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/2024-q1-fragrance-site-home-page-RWD-hero-banner-trending-us-can-2833-image-only.jpg?imwidth=315",
+        "heading": "The New & Now Fragrance Edit",
+        "discription": "Try the seasons latest scents from sophisticated fruits and rich florals.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": 5,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/2024-feb-hair-repair-site-home-page-hero-banner-frizz-us-can-image-only.jpg?imwidth=315",
+        "heading": "Feeling Fizzy?",
+        "discription": "Smooth things over with the latest healthy hair picks.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": 6,
+        "catagory": "topSlider",
+        "image": "https://www.sephora.com/contentimages/2024-3-26-glow-recipe-hue-drops-site-desktop-rwd-hero-banner-1200x800-en-us-can.jpg?imwidth=315",
+        "heading": "New Glow Recipe Hue Drops",
+        "discription": "Hydrate skin and visibly even tone with his bronzy take on fan-fave Dew Drops.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "7",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s1785856-main-zoom.jpg?imwidth=122",
+        "heading": "Drunk Elephant",
+        "discription": "B-Hydra Intensive Hydration Serum with Hyaluronic Acid",
+        "price": "$49.00",
+        "rating": "⭐ 4",
+        "reviews": "3.6K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "8",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2316248-main-zoom.jpg?imwidth=122",
+        "heading": "Dior",
+        "discription": "Lip Glow Oil",
+        "price": "$40.00",
+        "rating": "⭐ 4",
+        "reviews": "3.9K reviews",
+        "size": "30 ml"
+    },
+    {
+        "id": "9",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2736999-main-zoom.jpg?imwidth=122",
+        "heading": "Sephora Favorits",
+        "discription": "Fresh Face Makeup",
+        "price": "$45.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "10",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2649788-main-zoom.jpg?imwidth=122",
+        "heading": "Glossier",
+        "discription": "Balm Dotcom Lip Balm and Skin Salve",
+        "price": "$14.00",
+        "rating": "⭐ 4",
+        "reviews": "5K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "11",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2683464-main-zoom.jpg?imwidth=122",
+        "heading": "Gisou",
+        "discription": "Honey Infused Hydrating Lip Oil",
+        "price": "$28.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "12",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2735223-main-zoom.jpg?imwidth=122",
+        "heading": "Tower 28 Beauty",
+        "discription": "LipSoft hydrating tnted Lip Treatment",
+        "price": "$16.00",
+        "rating": "⭐ 4",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "13",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2207231-main-zoom.jpg?imwidth=122",
+        "heading": "SEPHORA COLLECTION",
+        "discription": "Sephora Collection x Wet Brush Luxe",
+        "price": "$10.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "14",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2640159-main-zoom.jpg?imwidth=122",
+        "heading": "Rare Beauty by Selena Gomez",
+        "discription": "Sodt Pinch Tinted Lip Oil",
+        "price": "$20.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "15",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2743060-main-zoom.jpg?imwidth=122",
+        "heading": "LANEIGE",
+        "discription": "Lip Glowy Balm",
+        "price": "$19.00",
+        "rating": "⭐ 4",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "16",
+        "catagory": "Chosen For You",
+        "image": "https://www.sephora.com/productimages/sku/s2207231-main-zoom.jpg?imwidth=122",
+        "heading": "Glow Recipe",
+        "discription": "Watermelon Glow Ultra-Fine Mist",
+        "price": "$29.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "17",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2743110-main-zoom.jpg?imwidth=122",
+        "heading": "LANEIGE",
+        "discription": "LIP glowy Baim",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "18",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2763845-main-zoom.jpg?imwidth=122",
+        "heading": "Sephora Favorits",
+        "discription": "Sun Safety Kit",
+        "price": "$39.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "19",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2748333-main-zoom.jpg?imwidth=122",
+        "heading": "Rare Beauty by Selena Gomez",
+        "discription": "Soft Pinch Luminous Powder Blush",
+        "price": "$26.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "20",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2683464-main-zoom.jpg?imwidth=122",
+        "heading": "Gisou",
+        "discription": "Honey Infused Hydrating Lip Oil",
+        "price": "$28.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "21",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2763449-main-zoom.jpg?imwidth=122",
+        "heading": "Sephora Favorits",
+        "discription": "Clean Me UP Kit",
+        "price": "$35.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "22",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2743045-main-zoom.jpg?imwidth=122",
+        "heading": "LANEIGE",
+        "discription": "Dreamy Lip Kit",
+        "price": "$20.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "23",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2742567-main-zoom.jpg?imwidth=122",
+        "heading": "PATRICK TA",
+        "discription": "Major Headlines Double-Take Creme",
+        "price": "$38.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "24",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2735207-main-zoom.jpg?imwidth=122",
+        "heading": "Tower 28 Beauty",
+        "discription": "LipSoftie Hydrating Tinted Lip Treatment",
+        "price": "$16.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "25",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2762045-main-zoom.jpg?imwidth=122",
+        "heading": "Rare Beauty by Selena Gomez",
+        "discription": "Soft Pinch liquid Blush",
+        "price": "$23.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "26",
+        "catagory": "New Arrivals",
+        "image": "https://www.sephora.com/productimages/sku/s2743110-main-zoom.jpg?imwidth=122",
+        "heading": "LANEIGE",
+        "discription": "LIP glowy Baim",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "27",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/April/2024-04-05-sse-bundle-c-site-desktop-mobile-app-beauty-offers-page-banner-sc-30-off-shop-now-us-can-final.jpg?imwidth=240",
+        "heading": "Get 30% off** ALL Sephora Collection",
+        "discription": "Save on must-haves during the Sephora Savings Event. Use code YAYSAVE.",
+        "discriptions": "Beauty Insider Members only",
+        "discription2": "In store & online. Ends 4/15/2024 **Tearms apply"
+    },
+    {
+        "id": "28",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/April/2024-04-03-HAIRREVIVAL-slotting-promo-app-beauty-offers-banner-US-CA-handoff.jpg?imwidth=240",
+        "heading": "Choose aComplimentary trial Size",
+        "discription": "Enjoy hair care from shu uemura or Kerastase",
+        "discriptions": "Complimentory with $40 purchase * Beauty Insider Members only",
+        "discription2": "Online only *Exclusions/terms apply"
+    },
+    {
+        "id": "29",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/April/2024-4-4-supergoop-unseen-mineral-and-protectint-site-desktop-mobile-app-beauty-offers-page-banner-en-us.jpg?imwidth=240",
+        "heading": "Free Trial-Size Supergoop SPF",
+        "discription": "Try Unseen Mineral Sunscree Spf 40: sheer and weightless with a natural-looking finish",
+        "discriptions": "Free with 430 purchase *Beauty Insider Members only",
+        "discription2": "Online only *Exclusions/terms apply"
+    },
+    {
+        "id": "30",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-3-XX-national-fragrance-day-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240",
+        "heading": "Complimenttary Fragrance Mini",
+        "discription": "Choose a bestselling scent from CLEAN RESERVE, Juliette has a Gun, and more.",
+        "discriptions": "Complimentary with $40 purchese *beauty Insider members Omly",
+        "discription2": "Online only *Exclusions/terms apply"
+    },
+    {
+        "id": "31",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-3-19-la-mer-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240",
+        "heading": "Complimentary la mer Trial Size",
+        "discription": "Try he Creme de la Mer Moisturizer, infused with the Brand's hydrting Miracle Broth",
+        "discriptions": "Complimentary with $60 purchese *beauty Insider members Omly",
+        "discription2": "Online only *Exclusions/terms apply"
+    },
+    {
+        "id": "32",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-03-01-slotting-baar-app-home-page-beauty-offer-banner-ddg-US-CA-handoff.jpg?imwidth=240",
+        "heading": "Auto-Replenish Hot Deal",
+        "discription": "Get 10% off your first three Alpha Beta Peel Pad subscription deliveries",
+        "discriptions": "Limited Time Only Beauty Insider Members only",
+        "discription2": "In store & online. Ends 4/15/2024 **Tearms apply"
+    },
+    {
+        "id": "33",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/March/2024-03-01-PICKNEWNESS-slotting-promo-app-beauty-offers-banner-US-handoff.jpg?imwidth=240",
+        "heading": "Choose afree Trial size",
+        "discription": "Get a kilhl's Since 1851 treatment, Joise Maran body lotion, or ELEMIS cleanser.",
+        "discriptions": "Free with 30% purchase *Beauty Insider Members only",
+        "discription2": "App only *Exclusion/terms apply"
+    },
+    {
+        "id": "34",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-02-29-PRETTYHAIR-slotting-promo-app-beauty-offers-banner-US.jpg?imwidth=240",
+        "heading": "Choose a free hair-Care Trial Size",
+        "discription": "Save on must-haves during the Sephora Savings Event. Use code YAYSAVE.",
+        "discriptions": "Free with 30% purchase *Beauty Insider Members only",
+        "discription2": "IApp only *Exclusion/terms apply"
+    },
+    {
+        "id": "35",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-28-skinfix-barrier-protection-site-desktop-mobile-app-beauty-offers-page-banner-en-us-can.jpg?imwidth=240",
+        "heading": "Get aSkinfix Trial Size",
+        "discription": "Visibly plump skin with this new and improved, barrier-supporting moisturizer",
+        "discriptions": "Free with 30% purchase *Beauty Insider Members only",
+        "discription2": "App only *Exclusion/terms apply"
+    },
+    {
+        "id": "36",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2024/February/2024-2-17-vib-r-gifts-site-desktop-mobile-app-beauty-offers-page-banner-moroccanoil-en-us-can.jpg?imwidth=240",
+        "heading": "Receive a Moroccanoil Gift",
+        "discription": "Save on must-haves during the Sephora Savings Event. Use code YAYSAVE.",
+        "discriptions": "Beauty Insider Members only",
+        "discription2": "In store & online. Ends 4/15/2024 **Tearms apply"
+    },
+    {
+        "id": "37",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/beautyoffers/2023/September/2023-07-03-omni-convenience-optimizations-site-beauty-offers-page-banner-same-day-delivery-us-can-final.jpg?imwidth=240",
+        "heading": "Try same-day Unlimited FREE for 30 Days",
+        "discription": "Visibly plump skin with this new and improved, barrier-supporting moisturizer.",
+        "discriptions": "Beauty Insider Members only",
+        "discription2": "In store & online. Ends 4/15/2024 **Tearms apply"
+    },
+    {
+        "id": "38",
+        "catagory": "Beauty Offers",
+        "image": "https://www.sephora.com/contentimages/promo/freeship2021/2022-08-01-free-ship-site-beauty-offers-page-banner-us-can-final.jpg?imwidth=240",
+        "heading": "Beuty insider Get Free Shipping",
+        "discription": "Get a kilhl's Since 1851 treatment, Joise Maran body lotion, or ELEMIS cleanser.",
+        "discriptions": "Beauty Insider Members only",
+        "discription2": "In store & online. Ends 4/15/2024 **Tearms apply"
+    },
+    {
+        "id": "39",
+        "catagory": "Beauty Offers2",
+        "image": "https://www.sephora.com/contentimages/homepage/031524/2024-4-7-makeup-by-mario-master-mattes-neutrals-eye-shadow-palette-site-desktop-home-page-rwd-marketing-banner-800x534-en-us-can-2000x2000.jpeg?imwidth=315",
+        "heading": "New from MAKEUP BY MARIO",
+        "discription": "Discover the Master Matters Eyeshadow Palettes, with 12 universally flattering shades",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "40",
+        "catagory": "Beauty Offers2",
+        "image": "https://www.sephora.com/contentimages/2024-4-29-jo-malone-frangipani-flower-site-desktop-home-page-rwd-marketing-banner-800x534-en-us-can.jpg?imwidth=315",
+        "heading": "New Jo Malone London",
+        "discription": "Discover Frangipani Flower cologne, with notes of jasmine, frangipani, and sandalwood.",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "41",
+        "catagory": "Beauty Offers2",
+        "image": "https://www.sephora.com/contentimages/2024-4-03-ilia-skin-rewind-complexion-stick-site-desktop-home-page-rwd-marketing-banner-800x534-en-us-can.png?imwidth=315",
+        "heading": "New ILIA Skin Rewind Complexion Stick",
+        "discription": "Foundation, concealer, and skincare- all in one",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "42",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2743110-main-zoom.jpg?imwidth=122",
+        "heading": "Gisou",
+        "discription": "Honey Infused Hydrating Lip Oil",
+        "price": "$28.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "43",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2316248-main-zoom.jpg?imwidth=122",
+        "heading": "Dior",
+        "discription": "Lip Glow Oil",
+        "price": "$40.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "44",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2736999-main-zoom.jpg?imwidth=122",
+        "heading": "Sephora Favorits",
+        "discription": "Fresh Face Makeup",
+        "price": "$45.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "45",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2649788-main-zoom.jpg?imwidth=122",
+        "heading": "Glossier",
+        "discription": "Balm Dotcom Lip Balm and Skin Salve",
+        "price": "$14.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "46",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2495497-main-zoom.jpg?imwidth=122",
+        "heading": "Summer Fridays",
+        "discription": "Lip Butter Balm for Hydation & Shine",
+        "price": "$24.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "47",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2031391-main-zoom.jpg?imwidth=122",
+        "heading": "The Ordinary",
+        "discription": "Niacinamide 10% + zink 1% Oil Control",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "48",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2748333-main-zoom.jpg?imwidth=122",
+        "heading": "Rare Beauty by Selena Gomez",
+        "discription": "Soft Pinch Luminous Powder Blush",
+        "price": "$26.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "49",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2737005-main-zoom.jpg?imwidth=122",
+        "heading": "MILK MAKEUP",
+        "discription": "Cooling Water Jelly Tint Lip + Cheek Blue",
+        "price": "$24.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "50",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2743110-main-zoom.jpg?imwidth=122",
+        "heading": "FORVR Mood",
+        "discription": "FINE fRAGRANCE Discovery Set",
+        "price": "$24.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "51",
+        "catagory": "Selling Fast",
+        "image": "https://www.sephora.com/productimages/sku/s2699353-main-zoom.jpg?imwidth=122",
+        "heading": "PATRICK TA",
+        "discription": "Major Headlines Double-Take Creme",
+        "price": "$38.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "52",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2240422-main-zoom.jpg?imwidth=122",
+        "heading": "GLAMGLOW",
+        "discription": "GLOWSTARTER mega Illuminating",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "53",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2372811-main-zoom.jpg?pb=clean-at-sephora&imwidth=122",
+        "heading": "Living Proof",
+        "discription": "No Fizz Intense Moisture Hair Mask",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "54",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2470904-main-zoom.jpg?imwidth=122",
+        "heading": "Murad",
+        "discription": "Clean Oil-Free Water Gel",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "55",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2580520-main-zoom.jpg?pb=clean-planet-positive-badge-2021&imwidth=122",
+        "heading": "Youth To The People",
+        "discription": "Superfood Air-Whip LightWeight Facepack",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "56",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2606945-main-zoom.jpg?imwidth=122",
+        "heading": "Olaplex",
+        "discription": "No. 3 Hair Repair Perfector",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "57",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2609865-main-zoom.jpg?imwidth=122",
+        "heading": "Yves Saint Laurent",
+        "discription": "NU GLOW IN BALM Face primming",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "58",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2678720-main-zoom.jpg?imwidth=122",
+        "heading": "Dr. Dennis Gloss",
+        "discription": "Alpha bta Daily Moisturizer",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "59",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2727659-main-zoom.jpg?imwidth=122",
+        "heading": "Bumble and Bumble",
+        "discription": "Hairdresser's Insivible Oil Heat Protaction",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "60",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2761765-main-zoom.jpg?imwidth=122",
+        "heading": "LANEIGE",
+        "discription": "Water Bank blue Hyaluronic Cream",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "61",
+        "catagory": "BeautyInside",
+        "image": "https://www.sephora.com/productimages/sku/s2771335-main-zoom.jpg?imwidth=122",
+        "heading": "Grande Cosmetics",
+        "discription": "GrandLASH - MD Lash Enhancing",
+        "points": "100 points",
+        "price": "$19.00",
+        "rating": "⭐ 3.5",
+        "reviews": "4.9K reviews",
+        "size": "50 ml"
+    },
+    {
+        "id": "62",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/031524/tools@3x.png?imwidth=48",
+        "name": "Blush"
+    },
+    {
+        "id": "63",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_skincare_cleanser_moisturizer_us_ca_rwd_slice.jpg?imwidth=48",
+        "name": "Serum"
+    },
+    {
+        "id": "64",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/091322/Homepage/RWD/hair%20dryer.JPG?imwidth=48",
+        "name": "Hair Styling & Treatment"
+    },
+    {
+        "id": "65",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_fragrance_bottle_us_ca_rwd_slice.jpg?imwidth=48",
+        "name": "Perfum"
+    },
+    {
+        "id": "66",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_minis_us_ca_rwd_slice.png?imwidth=48",
+        "name": "Minis"
+    },
+    {
+        "id": "67",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_sephoracollection_SC_us_ca_rwd_slice.jpg?imwidth=48",
+        "name": "Sephora Collection"
+    },
+    {
+        "id": "68",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/010124/star%20trending.JPG?imwidth=48",
+        "name": "Trending on Social"
+    },
+    {
+        "id": "69",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/categorybanners/RWD/icons/sale%2032@3x.jpg?imwidth=48",
+        "name": "sale"
+    },
+    {
+        "id": "70",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/010124/cleanatsephora.JPG?imwidth=48",
+        "name": "CClean at Sephora"
+    },
+    {
+        "id": "71",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_BOB_us_rwd_slice.png?imwidth=48",
+        "name": "Black Owned Brands"
+    },
+    {
+        "id": "72",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/111023/value%20size%2032@3x-1280x1280.png?imwidth=48",
+        "name": "Value Size Beauty"
+    },
+    {
+        "id": "73",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/010124/foundation.JPG?imwidth=48",
+        "name": "Find Your Prefect Foundation"
+    },
+    {
+        "id": "74",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/010124/hair%20girl.JPG?imwidth=48",
+        "name": "Skincare Routain Builder"
+    },
+    {
+        "id": "75",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/060222/Homepage/RWD/CategoryTiles/homepage_featured_category_tile_healthy%20scalp%20guide_us_ca_rwd_slice.png?imwidth=48",
+        "name": "Shiny Hair Guide"
+    },
+    {
+        "id": "76",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/010124/fragrance%20hub.JPG?imwidth=48",
+        "name": "Fragrance Hub"
+    },
+    {
+        "id": "77",
+        "catagory": "Featured",
+        "image": "https://www.sephora.com/contentimages/homepage/092022/Homepage/RWD/gifts%2032@3x.png?imwidth=48",
+        "name": "Gifts"
+    },
+    {
+        "id": "78",
+        "catagory": "Beauty Offers3",
+        "image": "https://www.sephora.com/contentimages/2024-2-29-black-owned-brands-site-desktop-mobile-app-home-page-rwd-marketing-banner-800x534-en-us.jpg?imwidth=315",
+        "heading": "The Need To Know",
+        "discription": "Discover new and exclusive hair care from PATTERN by Tracec Ellis Ross",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "79",
+        "catagory": "Beauty Offers3",
+        "image": "https://www.sephora.com/contentimages/2023-06-02-RWD-homepage-site-desktop-mobile-home-page-marketing-banner-800x534-klarna-release-us.jpg?imwidth=315",
+        "heading": "Shop Now , Pay Later",
+        "discription": "Split your purchase into four payments.*",
+        "link": "SHOP NOW >"
+    },
+    {
+        "id": "80",
+        "catagory": "Beauty Offers3",
+        "image": "https://www.sephora.com/contentimages/2023-06-02-RWD-homepage-site-desktop-mobile-home-page-marketing-banner-800x534-beauty-on-demand-release.jpg?imwidth=315",
+        "heading": "Beauty on Demand",
+        "discription": "Fast  and easy options that work for you",
+        "link": "SHOP NOW >"
+    }
+]
