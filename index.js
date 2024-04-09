@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
             productSlider3(mainData) //callfor productSlider3 when dom loded
             productOffers(mainData) //callfor productOffers when dom loded
             productReward(mainData) //callfor productreward when dom loded
+            productBoxes1(mainData) //callfor productBoxes1 when dom loded
+            productBoxes2(mainData) //callfor productBoxes2 when dom loded
+
+
 
         })
         .catch((err) => console.log(err))
@@ -28,18 +32,18 @@ function displayProduct(data, productDiv) {
     data.forEach((obj) => {
 
         let div = document.createElement("div")
-        div.style.width= "40%"
+        div.style.width = "40%"
 
         // let div1 = document.createElement("div")
 
 
         let img = document.createElement("img")
         img.src = obj.image
-        img.style.display="block"
+        img.style.display = "block"
 
         let div2 = document.createElement("div")
-        div2.style.display="block"
-        div2.style.whiteSpace="wrap"
+        div2.style.display = "block"
+        div2.style.whiteSpace = "wrap"
         div2.style.boxSizing = "border-box";
 
 
@@ -110,14 +114,14 @@ function topSlider2(data) {
 
 
 // slider prev and next button
-function prevButton(className){
+function prevButton(className) {
     document.querySelector(className).scrollBy({
         left: -document.querySelector(className).offsetWidth * 0.4, // Scrolls left
         behavior: 'smooth'
     });
 }
 
- function nextButton(className) {
+function nextButton(className) {
     document.querySelector(className).scrollBy({
         left: document.querySelector(className).offsetWidth * 0.4, // Scrolls right
         behavior: 'smooth'
@@ -132,18 +136,18 @@ function displayProduct1(data, productDiv) {
     data.forEach((obj) => {
 
         let div = document.createElement("div")
-        div.style.width= "calc(100% / 6)"
+        div.style.width = "calc(100% / 6)"
 
         // let div1 = document.createElement("div")
 
 
         let img = document.createElement("img")
         img.src = obj.image
-        img.style.display="block"
+        img.style.display = "block"
 
         let div2 = document.createElement("div")
-        div2.style.display="block"
-        div2.style.whiteSpace="wrap"
+        div2.style.display = "block"
+        div2.style.whiteSpace = "wrap"
         div2.style.boxSizing = "border-box";
 
 
@@ -224,17 +228,17 @@ function displayProduct2(data, productDiv) {
     data.forEach((obj) => {
 
         let div = document.createElement("div")
-        div.style.width= "calc(100% / 5)"
+        div.style.width = "calc(100% / 5)"
 
         // let div1 = document.createElement("div")
 
         let img = document.createElement("img")
         img.src = obj.image
-        img.style.display="block"
+        img.style.display = "block"
 
         let div2 = document.createElement("div")
-        div2.style.display="block"
-        div2.style.whiteSpace="wrap"
+        div2.style.display = "block"
+        div2.style.whiteSpace = "wrap"
         div2.style.boxSizing = "border-box";
 
         let h4 = document.createElement("h4")
@@ -249,8 +253,8 @@ function displayProduct2(data, productDiv) {
         let p2 = document.createElement("p")
         p2.innerText = obj.discription2
 
-        let button=document.createElement("button")
-        button.innerText="Shop Now"
+        let button = document.createElement("button")
+        button.innerText = "Shop Now"
 
         div2.append(h4, p, p1, p2, button)
         // div1.append()
@@ -288,17 +292,17 @@ function displayProduct3(data, productDiv) {
     data.forEach((obj) => {
 
         let div = document.createElement("div")
-        div.style.width= "calc(100% / 6)"
+        div.style.width = "calc(100% / 6)"
 
         // let div1 = document.createElement("div")
 
         let img = document.createElement("img")
         img.src = obj.image
-        img.style.display="block"
+        img.style.display = "block"
 
         let div2 = document.createElement("div")
-        div2.style.display="block"
-        div2.style.whiteSpace="wrap"
+        div2.style.display = "block"
+        div2.style.whiteSpace = "wrap"
         div2.style.boxSizing = "border-box";
 
         let h5 = document.createElement("h5")
@@ -310,8 +314,8 @@ function displayProduct3(data, productDiv) {
         let h3 = document.createElement("h4")
         h3.innerText = obj.points
 
-        let button=document.createElement("button")
-        button.innerText="Sign In to Access"
+        let button = document.createElement("button")
+        button.innerText = "Sign In to Access"
 
         div2.append(h5, p, h3, button)
         // div1.append()
@@ -339,3 +343,72 @@ function productReward(data) {
     displayProduct3(data1, productReward)
 }
 // productReward
+
+
+
+
+// productdisplay function display class productBoxes1 productBoxes2
+
+function displayProduct4(data, productDiv) {
+    console.log(data)
+
+    data.forEach((obj) => {
+
+        let div = document.createElement("div")
+        div.style.width = "calc(100% / 8)"
+        div.style.display = "block"
+        div.style.whiteSpace = "wrap"
+        div.style.boxSizing = "border-box";
+
+        // let div1 = document.createElement("div")
+
+        let p = document.createElement("p")
+        p.innerText = obj.name
+
+        let img = document.createElement("img")
+        img.src = obj.image
+        img.style.display = "block"
+        
+
+        div.append(p, img)
+
+        productDiv.append(div)
+
+    });
+}
+
+// productdisplay3 function display class productBoxes1 productBoxes2
+
+
+
+
+// productBoxes1
+
+function productBoxes1(data) {
+
+    let data1 = data.filter((obj) => {
+        if (obj.catagory == "Featured") {
+            return obj
+        }
+    })
+
+    let productBoxes1 = document.querySelector(".productBoxes1")
+    displayProduct4(data1, productBoxes1)
+}
+// productBoxes1
+
+
+// productBoxes2
+
+function productBoxes2(data) {
+
+    let data1 = data.filter((obj) => {
+        if (obj.catagory == "Featured1") {
+            return obj
+        }
+    })
+
+    let productBoxes2 = document.querySelector(".productBoxes2")
+    displayProduct4(data1, productBoxes2)
+}
+// productBoxes2

@@ -87,6 +87,10 @@ hr{
 
 /* navBar */
 
+/* header end */
+
+/* containt section start  */
+
 
 /* topSlider */
 .topSlider {
@@ -370,7 +374,7 @@ img {
 }
 
 .next1 {
-    right: 10%;
+    right: 7%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -501,3 +505,253 @@ img {
 
 /* Beauty Insider */
 
+
+/* featured categories & little gudence*/
+
+.boxes {
+    flex-grow: 1;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    /* gap: 10px; */
+    /* width: 100%;  */
+}
+
+.boxes::-webkit-scrollbar {
+    /* Hide scrollbar */
+    display: none;
+}
+
+.boxes>div {
+    flex: 0 0 100px;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 7px 5px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.boxes>div p{
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.boxes>div img {
+    width: 50px;
+    margin: 20px 0 0 40px;
+}
+
+#boxesparent > .prev1 {
+    margin-left: 270px;
+}
+
+.productBoxes1>div:nth-child(2){
+    margin-left: 130px;
+}
+
+.productBoxes2>div:nth-child(2){
+    margin-left: 65px;
+}
+
+#boxesparent > h3,
+#boxesparent > p {
+    display: none;
+    margin: 8px 0 8px 0;
+}
+
+#boxesparent >p a {
+    text-decoration: none;
+    color: blue;
+}
+
+#boxesparent >p {
+    font-size: 13;
+}
+
+#boxesparent a:hover {
+    text-decoration: underline;
+}
+
+.boxCatagoris {
+    box-shadow: none;
+}
+
+.boxCatagoris >h3,
+.boxCatagoris >p {
+    margin: 8px 0 8px 0;
+
+}
+
+.boxCatagoris >p {
+    font-size: 13px;
+}
+
+.boxCatagoris >p a {
+    text-decoration: none;
+    color: blue;
+}
+
+.boxCatagoris a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* featured categories & little gudence*/
+
+
+
+
+/* containt section start  */
+
+
+
+
+
+/* footer start */
+
+#footerMain {
+    color: white;
+    background-color: #000000;
+    padding: 50px 7%;
+}
+
+/* footerMain1 */
+#footerMain1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerMain1 >div {
+    display: flex;
+    padding: 10px;
+}
+
+#footerMain1 >div > div img {
+    width: 30px;
+}
+
+#footerMain1 >div > div p {
+    margin: 1px 5px;
+    font-size: 12px;
+}
+
+#footerMain1 >div > div p > a{
+    text-decoration: none;
+    color: white;
+}
+
+#footerMain1 >div > div p > a:hover{
+    text-decoration: underline;
+}
+
+/* footerMain1 */
+
+
+/* footerMain2 */
+
+#footerMain2 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footerMain2 > div {
+    padding: 10px;
+}
+
+#footerMain2 >div >h4{
+    font-size: 14px;
+    margin: 8px;
+}
+
+#footerMain2 >div >p{
+    margin: 8px;
+}
+
+#footerMain2 >div a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+#footerMain2 >div:nth-child(4)  img {
+    padding: 10px;
+    width: 30px;
+
+}
+
+#footerMain2 >div:nth-child(4) > div{
+    display: flex;
+}
+#footerMain2 >div:nth-child(4) p {
+    margin: 8px 0;
+}
+
+#footerMain2 >div:nth-child(5) h2 {
+    margin: 0 0 130px 0;
+}
+
+#footerMain2 >div:nth-child(5) label {
+    font-size: 14px;
+}
+
+#footerMain2 >div:nth-child(5) input {
+    margin: 15px 15px 30px 0;
+    padding: 15px;
+    width: 58%;
+    border-radius: 10px;
+}
+
+#footerMain2 >div:nth-child(5) button{
+    padding: 15px 25px;
+     border-radius: 50px;
+     color: white;
+     background-color: #000000;
+     border: 2px solid white;
+     font-weight:bolder;
+     font-size: 16;
+}
+
+/* footerMain2 */
+
+
+/* footerMain3 */
+
+#footerMain3 {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footerMain3 >div > p img {
+    width: 30px;
+}
+
+#footerMain3 >div > p  {
+    margin: 8px;
+    font-size: 12px;
+}
+
+#footerMain3 >div > p a {
+    text-decoration: none;
+    color: white;
+
+}
+
+#footerMain3 >div > p a:hover{
+    text-decoration: underline;
+}
+
+#footerMain3 > div:nth-child(2) {
+    display: flex;
+    align-items: center;
+}
+
+#footerMain3 > div:nth-child(2) img {
+    width: 30px;
+    margin: 0 10px;
+    height: 30px;
+}
