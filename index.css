@@ -3,7 +3,8 @@ body {
     margin: 0;
 
 }
-hr{
+
+hr {
     margin: 25px 0;
 }
 
@@ -12,7 +13,7 @@ hr{
 /* headOffer */
 #headOffer {
     display: flex;
-    padding: 0 10%;
+    padding: 0 7%;
     justify-content: space-evenly;
     align-items: center;
     background-color: rgb(197, 185, 223);
@@ -20,6 +21,7 @@ hr{
 
 #headOffer>img {
     height: 60px;
+    width: 40%;
 }
 
 #headOffer>a {
@@ -42,9 +44,16 @@ hr{
 /* headseach */
 #headSearch {
     display: flex;
-    padding: 15px 10%;
+    padding: 15px 7%;
     align-items: center;
     justify-content: space-evenly;
+}
+
+#headSearch button {
+    background-color: white;
+    border-color: white;
+    border-radius: 5px;
+    margin-left: 15px;
 }
 
 #headSearch>div:nth-child(2)>input {
@@ -59,11 +68,15 @@ hr{
     font-weight: bold;
 }
 
+#headSearch a:hover {
+    text-decoration: underline;
+}
+
 /* headseach */
 
 /* navBar */
 #navBar {
-    padding: 10px 10%;
+    padding: 10px 7%;
     background-color: black;
 }
 
@@ -79,6 +92,7 @@ hr{
     color: white;
     text-decoration: none;
     font-size: 15px;
+    margin: 0 5px;
 }
 
 #nav-list li a:hover {
@@ -225,7 +239,7 @@ img {
     gap: 5px;
 }
 
-.topSlider1 > div {
+.topSlider1>div {
     margin: 7px 0;
     box-sizing: border-box;
 
@@ -267,7 +281,7 @@ img {
     gap: 5px;
 }
 
-.topSlider2 > div {
+.topSlider2>div {
     margin: 7px 0;
     box-sizing: border-box;
 
@@ -322,7 +336,7 @@ img {
 }
 
 .productSlider>div {
-    flex: 0 0 calc(100% /5);
+    flex: 0 0 calc(100% /6);
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -402,7 +416,7 @@ img {
 }
 
 .productOffers>div {
-    flex: 0 0 calc(100% /5);
+    flex: 0 0 calc(100% /6);
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -420,7 +434,7 @@ img {
 }
 
 .productOffers>div:nth-child(-n+12) div h4,
-.productOffers>div:nth-child(-n+12) div p{
+.productOffers>div:nth-child(-n+12) div p {
     margin: 0;
 }
 
@@ -463,7 +477,7 @@ img {
 }
 
 .productReward>div {
-    flex: 0 0 calc(100% /5);
+    flex: 0 0 calc(100% /6);
     display: inline-block;
     flex-direction: column;
     justify-content: center;
@@ -483,7 +497,7 @@ img {
 
 .productReward>div:nth-child(-n+10) div h5,
 .productReward>div:nth-child(-n+10) div p,
-.productReward>div:nth-child(-n+10) div h4{
+.productReward>div:nth-child(-n+10) div h4 {
     margin: 0;
 }
 
@@ -535,7 +549,7 @@ img {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
-.boxes>div p{
+.boxes>div p {
     margin: 5px 0;
     font-size: 14px;
 }
@@ -545,30 +559,30 @@ img {
     margin: 20px 0 0 40px;
 }
 
-#boxesparent > .prev1 {
+#boxesparent>.prev1 {
     margin-left: 270px;
 }
 
-.productBoxes1>div:nth-child(2){
+.productBoxes1>div:nth-child(2) {
     margin-left: 130px;
 }
 
-.productBoxes2>div:nth-child(2){
+.productBoxes2>div:nth-child(2) {
     margin-left: 65px;
 }
 
-#boxesparent > h3,
-#boxesparent > p {
+#boxesparent>h3,
+#boxesparent>p {
     display: none;
     margin: 8px 0 8px 0;
 }
 
-#boxesparent >p a {
+#boxesparent>p a {
     text-decoration: none;
     color: blue;
 }
 
-#boxesparent >p {
+#boxesparent>p {
     font-size: 13;
 }
 
@@ -580,17 +594,17 @@ img {
     box-shadow: none;
 }
 
-.boxCatagoris >h3,
-.boxCatagoris >p {
+.boxCatagoris>h3,
+.boxCatagoris>p {
     margin: 8px 0 8px 0;
 
 }
 
-.boxCatagoris >p {
+.boxCatagoris>p {
     font-size: 13px;
 }
 
-.boxCatagoris >p a {
+.boxCatagoris>p a {
     text-decoration: none;
     color: blue;
 }
@@ -610,7 +624,7 @@ img {
     font-size: 14px;
 }
 
-#para1 > a {
+#para1>a {
     color: black;
     font-weight: bolder;
 }
@@ -621,19 +635,19 @@ img {
 
 }
 
-#para2 >p {
+#para2>p {
     margin: 0;
-padding: 16px;
+    padding: 16px;
 }
 
-#para2 >p a{
+#para2>p a {
     text-decoration: none;
     color: #000000;
-    
+
 }
 
 
-#para2 >p a:hover {
+#para2>p a:hover {
     text-decoration: underline;
 }
 
@@ -661,26 +675,26 @@ padding: 16px;
     justify-content: space-evenly;
 }
 
-#footerMain1 >div {
+#footerMain1>div {
     display: flex;
     padding: 10px;
 }
 
-#footerMain1 >div > div img {
+#footerMain1>div>div img {
     width: 30px;
 }
 
-#footerMain1 >div > div p {
+#footerMain1>div>div p {
     margin: 1px 5px;
     font-size: 12px;
 }
 
-#footerMain1 >div > div p > a{
+#footerMain1>div>div p>a {
     text-decoration: none;
     color: white;
 }
 
-#footerMain1 >div > div p > a:hover{
+#footerMain1>div>div p>a:hover {
     text-decoration: underline;
 }
 
@@ -694,61 +708,62 @@ padding: 16px;
     justify-content: space-evenly;
 }
 
-#footerMain2 > div {
+#footerMain2>div {
     padding: 10px;
 }
 
-#footerMain2 >div >h4{
+#footerMain2>div>h4 {
     font-size: 14px;
     margin: 8px;
 }
 
-#footerMain2 >div >p{
+#footerMain2>div>p {
     margin: 8px;
 }
 
-#footerMain2 >div a {
+#footerMain2>div a {
     color: white;
     text-decoration: none;
     font-size: 12px;
 }
 
-#footerMain2 >div:nth-child(4)  img {
+#footerMain2>div:nth-child(4) img {
     padding: 10px;
     width: 30px;
 
 }
 
-#footerMain2 >div:nth-child(4) > div{
+#footerMain2>div:nth-child(4)>div {
     display: flex;
 }
-#footerMain2 >div:nth-child(4) p {
+
+#footerMain2>div:nth-child(4) p {
     margin: 8px 0;
 }
 
-#footerMain2 >div:nth-child(5) h2 {
+#footerMain2>div:nth-child(5) h2 {
     margin: 0 0 130px 0;
 }
 
-#footerMain2 >div:nth-child(5) label {
+#footerMain2>div:nth-child(5) label {
     font-size: 14px;
 }
 
-#footerMain2 >div:nth-child(5) input {
+#footerMain2>div:nth-child(5) input {
     margin: 15px 15px 30px 0;
     padding: 15px;
     width: 58%;
     border-radius: 10px;
 }
 
-#footerMain2 >div:nth-child(5) button{
+#footerMain2>div:nth-child(5) button {
     padding: 15px 25px;
-     border-radius: 50px;
-     color: white;
-     background-color: #000000;
-     border: 2px solid white;
-     font-weight:bolder;
-     font-size: 16;
+    border-radius: 50px;
+    color: white;
+    background-color: #000000;
+    border: 2px solid white;
+    font-weight: bolder;
+    font-size: 16;
 }
 
 /* footerMain2 */
@@ -761,31 +776,31 @@ padding: 16px;
     justify-content: space-between;
 }
 
-#footerMain3 >div > p img {
+#footerMain3>div>p img {
     width: 30px;
 }
 
-#footerMain3 >div > p  {
+#footerMain3>div>p {
     margin: 8px;
     font-size: 12px;
 }
 
-#footerMain3 >div > p a {
+#footerMain3>div>p a {
     text-decoration: none;
     color: white;
 
 }
 
-#footerMain3 >div > p a:hover{
+#footerMain3>div>p a:hover {
     text-decoration: underline;
 }
 
-#footerMain3 > div:nth-child(2) {
+#footerMain3>div:nth-child(2) {
     display: flex;
     align-items: center;
 }
 
-#footerMain3 > div:nth-child(2) img {
+#footerMain3>div:nth-child(2) img {
     width: 30px;
     margin: 0 10px;
     height: 30px;

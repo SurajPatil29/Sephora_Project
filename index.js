@@ -18,8 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
             productBoxes1(mainData) //callfor productBoxes1 when dom loded
             productBoxes2(mainData) //callfor productBoxes2 when dom loded
 
-
-
         })
         .catch((err) => console.log(err))
     //console.log(mainData)
@@ -368,7 +366,7 @@ function displayProduct4(data, productDiv) {
         let img = document.createElement("img")
         img.src = obj.image
         img.style.display = "block"
-        
+
 
         div.append(p, img)
 
@@ -412,3 +410,21 @@ function productBoxes2(data) {
     displayProduct4(data1, productBoxes2)
 }
 // productBoxes2
+
+
+// search functinality
+
+let searchValue = document.getElementById("searchValue")
+function searchProduct() {
+
+    let value1 = searchValue.value
+    console.log(value1)
+
+    //localStorage.removeItem("searchValue")
+
+    localStorage.setItem("searchValue", JSON.stringify(value1))
+
+    window.location.href = "/Sephora_Project/Search/search.html"
+}
+
+// search functinality

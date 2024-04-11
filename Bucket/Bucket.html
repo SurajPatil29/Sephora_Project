@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucket</title>
+    <link rel="stylesheet" href="Bucket.css">
+    <link rel="stylesheet" href="/Sephora_Project/index.css">
+</head>
+
+<body>
+    <!-- Header Start -->
+    <div id="header">
+        <div id="headOffer">
+            <a href="#">Get30% off* ALL Sephora Collection. <span>Ends 4/15. **Terms apply.</span> JOIN BEAUTY
+                INSIDER</a>
+            <img src="/Sephora_Project/Images/ad1.avif" alt="30%Off">
+        </div>
+        <div id="headSearch">
+            <div>
+                <h2>S E P H O R A</h2>
+            </div>
+            <div>
+                <input id="searchValue" type="text" placeholder="🔍Search">
+                <button onclick="searchProduct()">🔍</button>
+            </div>
+            <div>
+                <a href="#">Stores & Services</a>
+            </div>
+            <div>
+                <!-- <img src="" alt=""> -->
+                <div>
+                    <a href="#">Community</a>
+                </div>
+            </div>
+            <div>
+                <!-- <img src="" alt=""> -->
+                <div>
+                    <a href="#">Sign in</a>
+                </div>
+            </div>
+            <div>
+                <!-- <img src="" alt=""> -->
+                <a href="#">Bucket</a>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Header End -->
+
+    <!-- Navbar Start -->
+    <div id="navBar">
+        <ul id="nav-list">
+            <li><a href="/Sephora_Project/New/New.html">New</a></li>
+            <li><a href="#">Brand</a></li>
+            <li><a href="/Sephora_Project/Makeup/Makeup.html">Makeup</a></li>
+            <li><a href="/Sephora_Project/Skincare/Skincare.html">Skincare</a></li>
+            <li><a href="/Sephora_Project/Hair/Hair.html">Hair</a></li>
+            <li><a href="/Sephora_Project/Fragrance/Fragrance.html">Fragrance</a></li>
+            <li><a href="/Sephora_Project/Tools&Brushes/Tools&Brushes.html">Tools & Brushes</a></li>
+            <li><a href="/Sephora_Project/Bath&Body/Bath&Body.html">Bath & Body</a></li>
+            <li><a href="#">Mini Size</a></li>
+            <li><a href="#">Gift & Gift Cards</a></li>
+            <li><a href="#">Buety Under $20</a></li>
+            <li><a href="#">Sale & Offers</a></li>
+        </ul>
+    </div>
+    <!-- Navbar End -->
+
+
+
+
+    <h1>Cart <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVkIKw4m3tR1wq4cgUv8SZLJK0Pi0VaE9j_bNVmbEtIYLn2PJbzMFd&usqp=CAE&s" alt=""></h1>
+    <h3 id="cartTotal"></h3>
+    <div id="cartProduct"></div>
+
+
+
+
+
+
+
+
+
+
+    <!-- footer Section -->
+
+    <div id="footerMain">
+        <div id="footerMain1">
+            <div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/find-store.svg" alt="store">
+                </div>
+                <div>
+                    <p><a href="#">find a Store</a></p>
+                    <p>Choosen Your Store</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKwAAACUCAMAAAA5xjIqAAAAYFBMVEX///8AAAClpaV7e3uenp75+fns7OxQUFDz8/PT09Pa2tr8/Pzk5OQZGRkkJCS7u7twcHBFRUXHx8eysrJYWFgLCwteXl7Nzc1AQECKioorKytlZWUzMzODg4M5OTmUlJR3kjfyAAAEiElEQVR4nO2c6XajMAyFMQGzxOwQQtje/y0naafLgEmQLeF2ju//ku9QW5alKxzHysrKysrqf1TpduOJXOOccV3SOL8lDTtESRpUZx3UyzGcn2oqXxE1dA9GfagXaqydAVbGrq0K62iE9U4bwWFnQ6yMBeCVkCXGYNkJuMtEbY6VsRIGW5lkZROIlRt9sYyB9lhslpXlEFgTx8F3pRDY3jBsA4he58kwLMsAsAaD7LsqAKxpVuZaWAtrYX83bHMr6kv+dl3N+6AYlEMgMeyUz1nZRrEQnIch51yIOGrLzDsFCsiEsNe5FTyUp8znkIvYg2ZxRLBJn4V7Hhl3N7OwzdQDDnEn7oLUFGzae9CrnZ+NVxOwSbfr379S5BVHwzZdq1rocWL3dQaKCdtHyqiPx3PvONgbZFfJFb6IZViw6Ukb9aHs6U5Dgg30X+u7xOlJ4RcHNo+RWB8l1W1aFNhZu5b+Xe0mLQasq1NHlyjeOoIRYAF3zp0SGyeENmwCeMJuxQEJbOLpHASbiqQhTBd2VEoFXquU5eaasDVqHPguWS1YDzbFi68rSZatHizF5vpQuF4IWrAFHaojWwhasAq9KYD4qh6sA5sjn1xLZZiwKi1KiFavVgP2Qha2PrS8OmjAYqWw24oKLNiBehXclWPB5uSrwHHmBgl2pmP8VJkiwVKeXh8KJxzYlH5/3VXgwE7AjrqaahzYgvas/ascBzYgzA6/hAT7q96sknkJrB4HdvhNGyzBLxdIdMWBZR4d4qfEgATbkRQM/tXCR6YOWx8QuxbGR3XYhn6H+T0WLPOIr2CO005osIOaqRWgpU1T58JIHbxWtUQd2IGoKPfxeyvTm1aRgzb/FquypxZsQxlqz2vDtl5hDmRlBEpi09SDbegWgqwarFlMnqiyWj+X/Jpumf5CE2x9adNZu1tDU+uopHYf/T4YxSbL5EYUhKZdjc+60RDFaIcGuCfZedMkgdJoRr2W8+0pE5wW/lV5CGqlWBazUGFZOuIEhXP1zIWE5pEpMAp1PH/qR8Mz9DT6Edd9YaZE9XXNQuOmE5YvjV24jrmbFyviimzHZCS2F/GqtHTjatcQJ7pxcgST+lknN27Qw3ZA1Gjc7Ug1C+uX+Q0ybGwE1g85F9kJYkqmgZW2x/yobaM3tW1bVl1eKE1vo8PKHui7N9Yk6V16g0/YsI0kAfPd3VvoWNhB8ocz1iAZNqzkTHiS85mFvaz+iu9xnhuBLZaJl/86OzEFu2rkiQ5pa+HDBss+XoU8Ao0Ie1qsgfaCPU6KBpsslkBEMFiOdWHsvifdoaj2DcuYgf3KCHzRVs/s+z8Ati8fI3RlVrljTTf4jLVmh7oOigE1UNHBHiILa2Et7A+B/VVfjiA5QiGC2DHw7idqaiA1VbNfE5JfRjclDMOCZjpDw1+9gXVeV1MOhyoAsTrc6BaDNtva4fUzqTSDW21PhmKJ1cN7QXIfwAFSMhMaoq3VPBjn0gAr9Mt9Xwpxa0Ivleg13cXcF4d8J7VJp3rUN5fHmet65HKrltZCaGVlZWX13+kPfcBQZO5CSOkAAAAASUVORK5CYII="
+                        alt="chatemoji">
+                </div>
+                <div>
+                    <p><a href="#">Customer Service</a></p>
+                    <p>Char is Unavailable</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/app.svg" alt="appicon">
+                </div>
+                <div>
+                    <p><a href="#">Get the App</a></p>
+                    <p>Download Now</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/sms-ko.svg" alt="mobileicon">
+                </div>
+                <div>
+                    <p><a href="#">Get Sephora Text Alerts</a></p>
+                    <p>Sign up Now</p>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/icons/cc-outline-ko.svg" alt="cardicon">
+                </div>
+                <div>
+                    <p><a href="#">Sephora Credit Card program</a></p>
+                    <p>Want 25% off on Your Sephora Purches? <a href="#">Details</a></p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footerMain2">
+            <div>
+                <h4>About Sephora</h4>
+                <p>
+                    <a href="#">About Sephora</a>
+                </p>
+                <p>
+                    <a href="#">Newsroom</a>
+                </p>
+                <p>
+                    <a href="#">Careers</a>
+                </p>
+                <p>
+                    <a href="#">Sephora Values</a>
+                </p>
+                <p>
+                    <a href="#">Supply Chain Transparency</a>
+                </p>
+                <p>
+                    <a href="#">Affiliates</a>
+                </p>
+                <p>
+                    <a href="#">Sephora Events</a>
+                </p>
+
+                <p>
+                    <a href="#">Gift Cards</a>
+                </p>
+                <p>
+                    <a href="#">Sephora Global Sites</a>
+                </p>
+                <p>
+                    <a href="#">Diversity, Equity & Inclusion</a>
+                </p>
+                <p>
+                    <a href="#">Sephora Accelerate</a>
+                </p>
+                <p>
+                    <a href="#">Beauty (re)Purposed</a>
+                </p>
+                <p>
+                    <a href="#">Report aVulnerability</a>
+                </p>
+            </div>
+            <div>
+                <h4>My Sephora</h4>
+                <p>
+                    <a href="#">Beauty Insider</a>
+                </p>
+                <p>
+                    <a href="#">Sephora Creadit Card</a>
+                </p>
+                <p>
+                    <a href="#">Cummunity Profile</a>
+                </p>
+                <p>
+                    <a href="#">Order Status</a>
+                </p>
+                <p>
+                    <a href="#">Purchese Histry</a>
+                </p>
+                <p>
+                    <a href="#">Account Setting</a>
+                </p>
+                <p>
+                    <a href="#">Beauty Advisor Recomendations</a>
+                </p>
+                <p>
+                    <a href="#">Beauty Offers</a>
+                </p>
+                <p>
+                    <a href="#">Quizzes & Buying Guides</a>
+                </p>
+                <p>
+                    <a href="#">Rewards Bazaar</a>
+                </p>
+                <p>
+                    <a href="#">Loves</a>
+                </p>
+                <p>
+                    <a href="#">Book a Reservation</a>
+                </p>
+            </div>
+            <div>
+                <h4>Help</h4>
+                <p>
+                    <a href="#">Customer Servise</a>
+                </p>
+                <p>
+                    <a href="#">Returns & Exchanges</a>
+                </p>
+                <p>
+                    <a href="#">Delivery and Pickup Options</a>
+                </p>
+                <p>
+                    <a href="#">Shiping</a>
+                </p>
+                <p>
+                    <a href="#">Billing</a>
+                </p>
+                <p>
+                    <a href="#">Internatonal Shipments</a>
+                </p>
+                <p>
+                    <a href="#">Beauty Shipments FAQ</a>
+                </p>
+                <p>
+                    <a href="#">Sephora at Kohl's</a>
+                </p>
+                <p>
+                    <a href="#">Store Locations</a>
+                </p>
+                <p>
+                    <a href="#">Online Ordering</a>
+                </p>
+                <p>
+                    <a href="#">Klama & Aftepay</a>
+                </p>
+                <p>
+                    <a href="#">Accessibility</a>
+                </p>
+            </div>
+            <div>
+                <h4>Resions and Languages</h4>
+
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/flags/us.svg" alt="usaflag">
+                    <p><a href="#">United States-English</a></p>
+                </div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="canflage">
+                    <p><a href="#">Canada-English</a></p>
+                </div>
+                <div>
+                    <img src="https://www.sephora.com/img/ufe/flags/ca.svg" alt="canflage">
+                    <p><a href="#">Canada-English</a></p>
+                </div>
+            </div>
+            <div>
+                <h2>We Belong to Somethings Beautiful</h2>
+                <div>
+                    <div>
+                        <label for="numbers">Sign up for Sephora text updates</label>
+                        <br>
+                        <input type="number" id="numbers" placeholder="Mobile Phone Numbers">
+                        <button>Continue</button>
+                    </div>
+                    <div>
+                        <label for="emais">Sign up for Sephora Emails</label>
+                        <br>
+                        <input type="email" id="emais" placeholder="Enter your emai address">
+                        <button>Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="footerMain3">
+            <div>
+                <p>2024 Sephora Usa, Inc. All rights reserved</p>
+                <p><a href="#">Privacy Policy </a><a href="#">Terms Of Use </a> <a href="#">Accessibility </a><a
+                        href="#">Sitemap </a><a href="#">Your Privacy Choice <img
+                            src="https://www.sephora.com/img/ufe/icons/opt-out.svg" alt=""></a></p>
+                <p>1-87-737-4672 TTY: 1-888-866-9845</p>
+            </div>
+            <div>
+                <img src="https://www.sephora.com/img/ufe/icons/instagram-ko.svg" alt="insticon">
+                <img src="https://www.sephora.com/img/ufe/icons/facebook-ko.svg" alt="facebook">
+                <img src="https://www.sephora.com/img/ufe/icons/twitter-ko.svg" alt="tweter">
+                <img src="https://www.sephora.com/img/ufe/icons/youtube-ko.svg" alt="youtube">
+                <img src="https://www.sephora.com/img/ufe/icons/pinterest-ko.svg" alt="">
+                <img src="https://www.sephora.com/img/ufe/icons/snapchat-ko.svg" alt="sharechat">
+                <img src="https://www.sephora.com/img/ufe/icons/tiktok-ko.svg" alt="ticktok">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="bucket.js"></script>

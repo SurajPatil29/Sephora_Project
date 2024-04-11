@@ -1,0 +1,68 @@
+#prodFilters {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 0 80px;
+    gap: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #0d0d0ee1; */
+}
+
+.lable {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+}
+
+.select:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+
+}
+
+.select::after{
+    content: '\25BC';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #555;
+}
+
+#product {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+#product > div {
+box-sizing: border-box;
+padding: 10px;
+}
+
+#product h4,
+#product p{
+    margin: 3px 0 7px 0;
+}
+
+#product h4 {
+    font-size: 14px;
+}
+
+#product p {
+    font-size: 12px;
+}
+
+
+
+
