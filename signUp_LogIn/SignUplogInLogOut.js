@@ -43,6 +43,21 @@ if (!sigUp) {
 
     let button = document.createElement("button")
     button.className = "logoutButton";
+    
+    let button1 = document.createElement("button")
+    button1.innerText="Reset"
+    button1.className = "logoutButton";
+
+    button1.onclick=function(){
+        localStorage.removeItem('userDetail');
+        localStorage.removeItem('isAutho');
+        localStorage.removeItem('searchValue');
+
+        window.location.reload()
+
+
+    }
+
 
     let a = document.createElement("a")
     a.innerText = "LogIn"
@@ -52,7 +67,7 @@ if (!sigUp) {
     let styles = `
     .logoutButton {
         background-color: #333;
-        padding: 10px 20px;
+        padding: 10px;
         border: none;
         cursor: pointer;
         transition: background-color 0.3s ease;
@@ -60,6 +75,10 @@ if (!sigUp) {
     .logoutButton > a{
         color: #fff;
         font-size: 16px;
+    }
+    .logoutButton {
+        font-size: 16px;
+
     }
     .logoutButton:hover {
         background-color: #fff;
@@ -72,7 +91,9 @@ if (!sigUp) {
 
     button.appendChild(a);
 
-    navbar.appendChild(button);
+    navbar.append(button, button1);
+
+    
 
 
 

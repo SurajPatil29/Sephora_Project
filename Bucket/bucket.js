@@ -36,16 +36,27 @@ function displayProduct(data){
 
         let button=document.createElement("button")
         button.innerText = "Remove From Bucket";
-
         button.onclick = function() {
                 removeFromCart(index)
+        }
 
+        let style =`
+            margin: 5px;
+        `
+        let bucketDiv =document.createElement("div")
+        bucketDiv.style=style
 
+        let button1=document.createElement("button")
+        button1.innerText = "Check Out";
+        button1.onclick = function (){
+            localStorage.setItem("product", JSON.stringify(obj))
+            window.location.href="checkOut.html"
         }
         
 
 
-        div.append(img,comName,prodName,rate,price, button)
+        bucketDiv.append(button1)
+        div.append(img,comName,prodName,rate,price,bucketDiv, button)
         cartProduct.append(div)
     })
 

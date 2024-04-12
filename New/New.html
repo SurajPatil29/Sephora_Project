@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New</title>
+    <link rel="shortcut icon" type="x-icon" href="https://1000logos.net/wp-content/uploads/2018/08/Sephora-symbol.jpg">
+    <script>
+        // log in Authenticated Start
+        let sigUp1 = localStorage.getItem("userDetail")
+
+        let logIn1 =localStorage.getItem("isAutho")
+
+        if(!sigUp1){
+    
+        window.location.href="../signUp_LogIn/SignUp.html"
+    
+        }else if(logIn1==="Not Authenticated"){
+            window.location.href="../signUp_LogIn/LogIn.html"
+
+        }
+       // log in Authenticated end
+
+    </script>
     <link rel="stylesheet" href="New.css">
     <link rel="stylesheet" href="/Sephora_Project/index.css">
 </head>
@@ -518,4 +536,4 @@
 
 </html>
 <script src="New_script.js"></script>
-<script src="/Sephora_Project/signUp_LogIn/SignUplogInLogOut.js"></script>
+<script src="../signUp_LogIn/SignUplogInLogOut.js"></script>

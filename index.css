@@ -435,7 +435,7 @@ img {
 }
 
 .productOffers>div {
-    flex: 0 0 calc(100% /6);
+    flex: 0 0 calc(100% /5);
     display: inline-block;
     flex-direction: column;
     justify-content: center;

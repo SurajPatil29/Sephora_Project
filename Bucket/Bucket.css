@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+    font-family: sans-serif, Arial;
+
+}
+
+h3 {
+    font-family: sans-serif, Arial;
+}
+
+#img {
+    width: 30px;
+}
+
+#cartProduct {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 80px;
+}
+
+#cartProduct>div {
+
+    padding: 15px;
+
+
+}
+
+button {
+    background-color: #0f140f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: rgb(21, 16, 16)
+}

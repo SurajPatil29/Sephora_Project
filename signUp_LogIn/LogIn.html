@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LogIn</title>
+    <link rel="shortcut icon" type="x-icon" href="https://1000logos.net/wp-content/uploads/2018/08/Sephora-symbol.jpg">
+
     <style>
         body {
             display: flex;
@@ -61,10 +63,10 @@
         <h1>Log In Page</h1>
         <form id="form">
             <label for="email">Email :</label>
-            <input id="email" type="text">
+            <input id="email" type="text" required>
             <br><br>
             <label for="password">Password :</label>
-            <input id="password" type="password">
+            <input id="password" type="password" required minlength="8">
             <br><br>
             <input type="submit" value="Log In">
         </form>
