@@ -36,13 +36,18 @@
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <div>
-                    <a href="#">Sign in</a>
+                <div id="signIn">
+                    
                 </div>
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <a href="#">Bucket</a>
+                <a href="/Sephora_Project/Bucket/Bucket.html">Bucket</a>
+            </div>
+            <div >
+                <div id="userName">
+                    <img src="/Sephora_Project/Images/user icon2.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -109,47 +114,112 @@
             <!--buttons ends-->
 
             <!-- filter for rate -->
-            <h3>Filter</h3>
-            <label class="lable" for="choosePrice">Choose Price</label>
-            <select id="choosePrice" class="select" onchange="sortPrice()">
-                <option value="">Select</option>
+            <div>
+                <div>
+                    <h3>Filter</h3>
+                    <label class="lable" for="choosePrice">Choose Price</label><br>
+                    <select id="choosePrice" class="select" onchange="sortPrice()">
+                        <option value="">Select</option>
 
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
-            </select>
-            <br /><br />
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
+                    </select>
+                    <br /><br />
+                </div>
+                <div>
+                    <!-- filter for rate -->
+                    <label class="lable" for="chooseRating">Choose Rating</label><br>
+                    <select id="chooseRating" class="select" onchange="sortRating()">
+                        <option value="">Select</option>
 
-            <!-- filter for rate -->
-            <label class="lable" for="chooseRating">Choose Rating</label>
-            <select id="chooseRating" class="select" onchange="sortRating()">
-                <option value="">Select</option>
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
+                    </select>
+                    <br /><br />
+                </div>
+                <div>
+                    <!-- filter for Gender -->
+                    <label class="lable" for="chooseGender">Choose Gender</label><br>
+                    <select id="chooseGender" class="select" onchange="sortGender()">
+                        <option value="">Select</option>
 
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
-            </select>
-            <br /><br />
+                        <option value="1">Men</option>
+                        <option value="2">Women</option>
+                    </select>
+                    <br /><br />
+                </div>
+                <div>
+                    <!-- filter for name -->
+                    <label class="lable" for="chooseOrder">Choose Order</label><br>
+                    <select id="chooseOrder" class="select" onchange="sortOrder()">
+                        <option value="">Select</option>
 
-            <!-- filter for Gender -->
-            <label class="lable" for="chooseGender">Choose Gender</label>
-            <select id="chooseGender" class="select" onchange="sortGender()">
-                <option value="">Select</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
 
-                <option value="1">Men</option>
-                <option value="2">Women</option>
-            </select>
-            <br /><br />
 
-             <!-- filter for name -->
-             <label class="lable" for="chooseOrder">Choose Order</label><br>
-             <select id="chooseOrder" class="select" onchange="sortOrder()">
-                 <option value="">Select</option>
- 
-                 <option value="1">A-Z</option>
-                 <option value="2">Z-A</option>
- 
- 
-             </select>
-             <br><br>
+                    </select>
+                    <br><br>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div id="horizontalslider">
+            <div>
+                <button onclick="newSort()">
+                    <span>New</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Beststsellers</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Clean</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg"
+                        alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Cruelty-Free</span>
+                    <img src="https://www.sephora.com/contentimages/meganav/icons/CrueltyFreeupdated.svg" alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Mini Size</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Fragrance Note Guide</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrances_guide.svg"
+                        alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Fragrance Quiz</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg"
+                        alt="" />
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Clean Fragrance Guide</span>
+                    <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg" alt="" />
+                </button>
+            </div>
+            <!-- buttons end -->
         </div>
 
         <div id="product">
@@ -451,3 +521,4 @@
 
 </html>
 <script src="Bath&Body.js"></script>
+<script src="/Sephora_Project/signUp_LogIn/SignUplogInLogOut.js"></script>

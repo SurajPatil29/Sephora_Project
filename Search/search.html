@@ -37,13 +37,18 @@
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <div>
-                    <a href="#">Sign in</a>
+                <div id="signIn">
+
                 </div>
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <a href="#">Bucket</a>
+                <a href="/Sephora_Project/Bucket/Bucket.html">Bucket</a>
+            </div>
+            <div>
+                <div id="userName">
+                    <img src="/Sephora_Project/Images/user icon2.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -71,55 +76,59 @@
     <!-- Navbar End -->
     <div id="prodFilters">
         <div>
-            <!-- filter for rate -->
-            <h3>Filter</h3>
-            <label class="lable" for="choosePrice">Choose Price</label><br>
-            <select id="choosePrice" class="select" onchange="sortPrice()">
-                <option value="">Select</option>
+            <div>
+                <!-- filter for rate -->
+                <h3>Filter</h3>
+                <label class="lable" for="choosePrice">Choose Price</label><br>
+                <select id="choosePrice" class="select" onchange="sortPrice()">
+                    <option value="">Select</option>
 
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
+                    <option value="1">Low To High</option>
+                    <option value="2">High to Low</option>
 
-            </select>
-            <br><br>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <!-- filter for rate -->
+                <label class="lable" for="chooseRating">Choose Rating</label><br>
+                <select id="chooseRating" class="select" onchange="sortRating()">
+                    <option value="">Select</option>
 
-            <!-- filter for rate -->
-            <label class="lable" for="chooseRating">Choose Rating</label><br>
-            <select id="chooseRating" class="select" onchange="sortRating()">
-                <option value="">Select</option>
+                    <option value="1">Low To High</option>
+                    <option value="2">High to Low</option>
 
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <!-- filter for Gender -->
+                <label class="lable" for="chooseGender">Choose Gender</label><br>
+                <select id="chooseGender" class="select" onchange="sortGender()">
+                    <option value="">Select</option>
 
-            </select>
-            <br><br>
-
-
-            <!-- filter for Gender -->
-            <label class="lable" for="chooseGender">Choose Gender</label><br>
-            <select id="chooseGender" class="select" onchange="sortGender()">
-                <option value="">Select</option>
-
-                <option value="1">Men</option>
-                <option value="2">Women</option>
-
-
-            </select>
-            <br><br>
+                    <option value="1">Men</option>
+                    <option value="2">Women</option>
 
 
-            
-            <!-- filter for name -->
-            <label class="lable" for="chooseOrder">Choose Order</label><br>
-            <select id="chooseOrder" class="select" onchange="sortOrder()">
-                <option value="">Select</option>
+                </select>
+                <br><br>
+            </div>
+            <div>
+                <!-- filter for name -->
+                <label class="lable" for="chooseOrder">Choose Order</label><br>
+                <select id="chooseOrder" class="select" onchange="sortOrder()">
+                    <option value="">Select</option>
 
-                <option value="1">A-Z</option>
-                <option value="2">Z-A</option>
+                    <option value="1">A-Z</option>
+                    <option value="2">Z-A</option>
 
 
-            </select>
-            <br><br>
+                </select>
+                <br><br>
+            </div>
+
+
         </div>
         <!-- product display here -->
 
@@ -366,3 +375,4 @@
 
 </html>
 <script src="search.js"></script>
+<script src="/Sephora_Project/signUp_LogIn/SignUplogInLogOut.js"></script>

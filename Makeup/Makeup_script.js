@@ -1,197 +1,215 @@
 
 
-let productDiv =document.getElementById("product")
+let productDiv = document.getElementById("product")
 
-let mainData =[]
+let mainData = []
+
+let data1 = []
+// filter product accoding to product page
+
+function filterProduct(data) {
+    data1 = data.filter((obj) => {
+        if (obj.Type === "Makeup") {
+            return obj
+        }
+    })
+
+    displayProduct(data1)
+}
 
 
-// function for display the product form data json and give divin html file
-function displayProduct(data){
+// filter product accoding to product page
+
+
+// function for display the product 
+function displayProduct(data) {
     data.forEach((obj) => {
-        let div=document.createElement("div");
-        
-        let img=document.createElement("img");
-        img.src=obj.Image;
-        img.style.height="200px"
+        let div = document.createElement("div");
 
-        let comName=document.createElement("h5");
-        comName.innerText=obj.company;
+        let img = document.createElement("img");
+        img.src = obj.Image;
+        img.style.height = "200px"
 
-        let prodName=document.createElement("p");
-        prodName.innerText=obj.Product;
+        let comName = document.createElement("h5");
+        comName.innerText = obj.company;
 
-        let rate=document.createElement("p");
-        rate.innerText=`✬ ${obj.Rating}   ${obj.Rating_count}`;
+        let prodName = document.createElement("p");
+        prodName.innerText = obj.Product;
 
-        let price=document.createElement("p");
-        price.innerText=`$ ${obj.Price}`
+        let rate = document.createElement("p");
+        rate.innerText = `✬ ${obj.Rating}   ${obj.Rating_count}`;
 
-        let button=document.createElement("button")
+        let price = document.createElement("p");
+        price.innerText = `$ ${obj.Price}`
+
+        let button = document.createElement("button")
         button.innerText = "Add to Bucket";
 
-        button.onclick= function(){
+        button.onclick = function () {
             addToCart(obj)
         }
 
 
-        div.append(img,comName,prodName,rate,price,button)
+        div.append(img, comName, prodName, rate, price, button)
         productDiv.append(div)
     });
 }
 
+// function for display the product 
+
+//fetch data from db
 fetch("/Sephora_Project/dataBase.json")
-.then((res)=>res.json())
-.then((data)=>{
-    mainData=data
-    displayProduct(data)})
-.catch((err)=>console.log(err))
+    .then((res) => res.json())
+    .then((data) => {
+        mainData = data
+        filterProduct(data)
+    })
+    .catch((err) => console.log(err))
+//fetch data from db
 
 
-// Here we resive value from select and according if we call function
-// Function 1 Price Filter Start
-function sortPrice(){
+// Function Price Filter Start
+function sortPrice() {
 
-    let sortBy =document.getElementById("choosePrice").value
-    let a=sortBy.toString()
+    let sortBy = document.getElementById("choosePrice").value
+    let a = sortBy.toString()
 
-    if(a==1){
-        
+    if (a == 1) {
+
         sortPriceLowToHigh()
 
-    }else if(a==2){
-        
+    } else if (a == 2) {
+
         sortPriceHighToLow()
     }
 }
 
-    // sort low to high
-function sortPriceLowToHigh(){
-        
+// sort low to high
+function sortPriceLowToHigh() {
+
     // sorting data according to price
-    mainData.sort(function(a,b){
-        return a.Price- b.Price
-   })
-   // privius data will null
-   productDiv.innerHTML=null
-   displayProduct(mainData)
-    
+    data1.sort(function (a, b) {
+        return a.Price - b.Price
+    })
+    // privius data will null
+    productDiv.innerHTML = null
+    displayProduct(data1)
+
 }
 
 // sort high to low
-function sortPriceHighToLow(){
-        
+function sortPriceHighToLow() {
+
     // sorting data according to price
-    mainData.sort(function(a,b){
+    data1.sort(function (a, b) {
         return b.Price - a.Price
     })
     // privius data will null
-    productDiv.innerHTML=null
-    displayProduct(mainData)
-    
+    productDiv.innerHTML = null
+    displayProduct(data1)
+
 }
-// Function 1 Price Filter End
+// Function Price Filter end
 
 
 
 
-// Here we resive value from select and according if we call function
-// Function 2 Rating  Filter Start
-function sortRating(){
+// Function Rating  Filter Start
+function sortRating() {
 
-    let sortBy =document.getElementById("chooseRating").value
-    let a=sortBy.toString()
-    
-    if(a==1){
-            
+    let sortBy = document.getElementById("chooseRating").value
+    let a = sortBy.toString()
+
+    if (a == 1) {
+
         sortRatingLowToHigh()
-    
-    }else if(a==2){
-            
+
+    } else if (a == 2) {
+
         sortRatingHighToLow()
     }
 }
-    
-    // sort low to high
-function sortRatingLowToHigh(){
-            
+
+// sort low to high
+function sortRatingLowToHigh() {
+
     // sorting data according to Rating
-    mainData.sort(function(a,b){
+    data1.sort(function (a, b) {
         return a.Rating - b.Rating
     })
     // privius data will null
-    productDiv.innerHTML=null
-    displayProduct(mainData)
-        
+    productDiv.innerHTML = null
+    displayProduct(data1)
+
 }
-    
+
 // sort high to low
-function sortRatingHighToLow(){
-            
+function sortRatingHighToLow() {
+
     // sorting data according to Rating
-    mainData.sort(function(a,b){
+    data1.sort(function (a, b) {
         return b.Rating - a.Rating
     })
     // privius data will null
-    productDiv.innerHTML=null
-    displayProduct(mainData)
-        
+    productDiv.innerHTML = null
+    displayProduct(data1)
+
 }
-// Function 2 Rating Filter End
+// Function Rating  Filter end
 
 
 
-// Here we resive value from select and according if we call function
-// Function 3 Gender  Filter Start
-function sortGender(){
+// Function Gender  Filter Start
+function sortGender() {
 
-    let sortBy =document.getElementById("chooseGender").value
-    let a=sortBy.toString()
-        
-    if(a==1){
-                
-        sortMale(mainData)
-        
-    }else if(a==2){
-                
-        sortFemale(mainData)
+    let sortBy = document.getElementById("chooseGender").value
+    let a = sortBy.toString()
+
+    if (a == 1) {
+
+        sortMale(data1)
+
+    } else if (a == 2) {
+
+        sortFemale(data1)
     }
 }
-        
+
 // sort low to high
-function sortMale(data){
-    productDiv.innerHTML=null
-    data.filter((obj)=>{
-                    
-    if(obj.Gender=="Male"){
-                        
-        return displayProduct([obj])
-                        
-    }
+function sortMale(data) {
+    productDiv.innerHTML = null
+    data.filter((obj) => {
+
+        if (obj.Gender == "Male") {
+
+            return displayProduct([obj])
+
+        }
     })
 }
-        
+
 // sort high to low
-function sortFemale(data){
-            
-    productDiv.innerHTML=null
-    data.filter((obj)=>{
-                
-    if(obj.Gender=="Female"){
-                    
-        return displayProduct([obj])
-                    
-    }
+function sortFemale(data) {
+
+    productDiv.innerHTML = null
+    data.filter((obj) => {
+
+        if (obj.Gender == "Female") {
+
+            return displayProduct([obj])
+
+        }
     })
 }
-// Function 3 gender Filter End
+// Function Gender  Filter end
 
 // sort according to New Start
 
-function newSort(){
-    productDiv.innerHTML=null
-    mainData.filter((obj)=>{
+function newSort() {
+    productDiv.innerHTML = null
+    data1.filter((obj) => {
 
-        if(obj.Category=="New"){
+        if (obj.Category == "New") {
             return displayProduct([obj])
         }
     })
@@ -199,21 +217,25 @@ function newSort(){
 }
 // sort according to New end
 
-function women(){
-    productDiv.innerHTML=null
-    mainData.filter((obj)=>{
 
-        if(obj.Gender=="Female"){
+// sort according to women start
+
+function women() {
+    productDiv.innerHTML = null
+    data1.filter((obj) => {
+
+        if (obj.Gender == "Female") {
             return displayProduct([obj])
         }
     })
 }
+// sort according to women end
 
 
 // function order filter
 
-function sortOrder(){
-    
+function sortOrder() {
+
     let sortBy = document.getElementById("chooseOrder").value
     let a = sortBy.toString()
 
@@ -228,28 +250,47 @@ function sortOrder(){
 }
 
 
-function sortAtoZ(){
+function sortAtoZ() {
+    console.log("atoz")
+
     // sorting data according to Rating
     data1.sort(function (a, b) {
-        return a.company - b.company
+        return a.company.localeCompare(b.company)
     })
     // privius data will null
     productDiv.innerHTML = null
     displayProduct(data1)
+    console.log(data1)
+
 }
+
+function sortZtoA(){
+    console.log("ztoa")
+
+    // sorting data according to Rating
+    data1.sort(function (a, b) {
+        return b.company.localeCompare(a.company)
+    })
+    // privius data will null
+    productDiv.innerHTML = null
+    displayProduct(data1)
+    console.log(data1)
+
+}
+
+// function order filter
+
 
 
 // function add to cart start
-function addToCart(obj){
-    
-    let cartDetails = JSON.parse(localStorage.getItem("cartDetails"))|| []
+function addToCart(obj) {
+
+    let cartDetails = JSON.parse(localStorage.getItem("cartDetails")) || []
     cartDetails.push(obj)
     localStorage.setItem("cartDetails", JSON.stringify(cartDetails))
 
 }
 // function add to cart end
-
-
 
 
 

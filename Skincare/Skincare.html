@@ -36,13 +36,18 @@
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <div>
-                    <a href="#">Sign in</a>
+                <div id="signIn">
+                    
                 </div>
             </div>
             <div>
                 <!-- <img src="" alt=""> -->
-                <a href="#">Bucket</a>
+                <a href="/Sephora_Project/Bucket/Bucket.html">Bucket</a>
+            </div>
+            <div >
+                <div id="userName">
+                    <img src="/Sephora_Project/Images/user icon2.jpg" alt="">
+                </div>
             </div>
         </div>
 
@@ -72,137 +77,212 @@
 
 
 
-<!-- Display Data Start -->
-<div id="prodFilters">
-    <div>
-        <h3>Skincare</h3>
-        <!-- buttons start -->
-        <div><button onclick="moisturiser()" class="filtButtonVertical">Moisturizers</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Cleansers</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Treatment</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Masks</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Eye Care</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Lip Balms & Treatments</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Sunscreen</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Self Tanners</button></div>
-        <br>
-        <div><button class="filtButtonVertical">High Tech Tools</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Wellness</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Shop by Concern</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Vegan</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Value & Gift Sets</button></div>
-        <br>
-        <div><button class="filtButtonVertical">Mini Size</button></div>
-        <br>
-        <div><button class="filtButtonVertical">FSA & HSA Eligible</button></div>
-        <br>
-        <br>
-        
-
-    
-        <!-- buttons end -->
-
-        <!-- filter for rate -->
-        <h3>Filters</h3>
-        <label class="lable" for="choosePrice">Choose Price</label>
-        <select id="choosePrice" class="select" onchange="sortPrice()">
-            <option value="">Select</option>
-            
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
-            
-        </select>
-        <br><br>
-
-        <!-- filter for rate -->
-        <label class="lable" for="chooseRating">Choose Rating</label>
-        <select id="chooseRating" class="select" onchange="sortRating()">
-            <option value="">Select</option>
-            
-                <option value="1">Low To High</option>
-                <option value="2">High to Low</option>
-            
-        </select>
-        <br><br>
+    <!-- Display Data Start -->
+    <div id="prodFilters">
+        <div>
+            <h3>Skincare</h3>
+            <!-- buttons start -->
+            <div><button onclick="moisturiser()" class="filtButtonVertical">Moisturizers</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Cleansers</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Treatment</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Masks</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Eye Care</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Lip Balms & Treatments</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Sunscreen</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Self Tanners</button></div>
+            <br>
+            <div><button class="filtButtonVertical">High Tech Tools</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Wellness</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Shop by Concern</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Vegan</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Value & Gift Sets</button></div>
+            <br>
+            <div><button class="filtButtonVertical">Mini Size</button></div>
+            <br>
+            <div><button class="filtButtonVertical">FSA & HSA Eligible</button></div>
+            <br>
+            <br>
 
 
-         <!-- filter for Gender -->
-         <label class="lable" for="chooseGender">Choose Gender</label>
-         <select id="chooseGender" class="select" onchange="sortGender()">
-             <option value="">Select</option>
-             
-                 <option value="1">Men</option>
-                 <option value="2">Women</option>
-                 
-             
-         </select>
-         <br><br>
+
+            <!-- buttons end -->
+            <div>
+                <div>
+                    <!-- filter for rate -->
+                    <h3>Filters</h3>
+                    <label class="lable" for="choosePrice">Choose Price</label>
+                    <select id="choosePrice" class="select" onchange="sortPrice()">
+                        <option value="">Select</option>
+
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
+
+                    </select>
+                    <br><br>
+                </div>
+                <div>
+                    <!-- filter for rate -->
+                    <label class="lable" for="chooseRating">Choose Rating</label>
+                    <select id="chooseRating" class="select" onchange="sortRating()">
+                        <option value="">Select</option>
+
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
+
+                    </select>
+                    <br><br>
+                </div>
+                <div>
+                    <!-- filter for Gender -->
+                    <label class="lable" for="chooseGender">Choose Gender</label>
+                    <select id="chooseGender" class="select" onchange="sortGender()">
+                        <option value="">Select</option>
+
+                        <option value="1">Men</option>
+                        <option value="2">Women</option>
 
 
-          <!-- filter for name -->
-          <label class="lable" for="chooseOrder">Choose Order</label><br>
-          <select id="chooseOrder" class="select" onchange="sortOrder()">
-              <option value="">Select</option>
+                    </select>
+                    <br><br>
+                </div>
+                <div>
+                    <!-- filter for name -->
+                    <label class="lable" for="chooseOrder">Choose Order</label><br>
+                    <select id="chooseOrder" class="select" onchange="sortOrder()">
+                        <option value="">Select</option>
 
-              <option value="1">A-Z</option>
-              <option value="2">Z-A</option>
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
 
 
-          </select>
-          <br><br>
+                    </select>
+                    <br><br>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="horizontalslider">
+            <!-- buttons start -->
+            <div>
+                <button onclick="newSort()">
+                    <span>New</span> <img src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg"
+                        alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Beststsellers</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Clean</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Vegan</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg" alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Mini Size</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Sephora Collection</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sephoracollection.svg"
+                        alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Skincare Quiz</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg" alt="">
+                </button>
+            </div>
+            <div>
+                <button>
+                    <span>Skin Routine Quiz</span> <img
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_age.svg" alt="">
+                </button>
+            </div>
+            <!-- buttons end -->
+        </div>
+        <div id="product">
+            <!-- buttons start -->
+            <div class="filtButtonHorizontal">
+                <button onclick="newSort()" class="customButton">
+                    <span class="buttonText">New</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Beststsellers</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Clean</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Vegan</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Mini Size</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Sephora Collection</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sephoracollection.svg"
+                        alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Skincare Quiz</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg" alt="">
+                </button>
+            </div>
+            <div class="filtButtonHorizontal">
+                <button class="customButton">
+                    <span class="buttonText">Skin Routine Quiz</span> <img class="buttonImg"
+                        src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_age.svg" alt="">
+                </button>
+            </div>
+            <!-- buttons end -->
+
+
+
+        </div>
     </div>
-
-    <div id="product">
-        <!-- buttons start -->
-        <div class="filtButtonHorizontal">
-            <button onclick="newSort()" class="customButton">
-                <span class="buttonText">New</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/new.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Beststsellers</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Clean</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Vegan</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/Icon_Vegan.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Mini Size</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/minis.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Sephora Collection</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/sephoracollection.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Skincare Quiz</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_quiz.svg" alt=""> 
-        </button></div>
-        <div class="filtButtonHorizontal">
-            <button class="customButton">
-                <span class="buttonText">Skin Routine Quiz</span> <img class="buttonImg" src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/skincare_age.svg" alt=""> 
-        </button></div>
-        <!-- buttons end -->
-        
-        
-        
-    </div>
-</div>
 
 
 
@@ -446,3 +526,4 @@
 
 </html>
 <script src="Skincare_script.js"></script>
+<script src="/Sephora_Project/signUp_LogIn/SignUplogInLogOut.js"></script>

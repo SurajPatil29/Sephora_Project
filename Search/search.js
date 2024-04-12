@@ -242,6 +242,7 @@ function sortAtoZ(){
     // privius data will null
     productDiv.innerHTML = null
     displayProduct(data1)
+
 }
 
 
@@ -253,6 +254,7 @@ function sortZtoA(){
     // privius data will null
     productDiv.innerHTML = null
     displayProduct(data1)
+
 }
 
 
