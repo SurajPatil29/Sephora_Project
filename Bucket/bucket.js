@@ -90,7 +90,7 @@ function searchProduct() {
 
     localStorage.setItem("searchValue", JSON.stringify(value1))
 
-    window.location.href = "/Sephora_Project/Search/search.html"
+    window.location.href = "../Search/search.html"
 }
 
 // search functinality

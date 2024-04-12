@@ -57,7 +57,7 @@ function displayProduct(data) {
 // function for display the product 
 
 //fetch data from db
-fetch("/Sephora_Project/dataBase.json")
+fetch("../dataBase.json")
     .then((res) => res.json())
     .then((data) => {
         mainData = data
@@ -313,7 +313,7 @@ function searchProduct() {
 
     localStorage.setItem("searchValue", JSON.stringify(value1))
 
-    window.location.href = "/Sephora_Project/Search/search.html"
+    window.location.href = "../Search/search.html"
 }
 
 // search functinality
