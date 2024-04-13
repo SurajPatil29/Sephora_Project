@@ -10,17 +10,17 @@
         // log in Authenticated Start
         let sigUp1 = localStorage.getItem("userDetail")
 
-        let logIn1 =localStorage.getItem("isAutho")
+        let logIn1 = localStorage.getItem("isAutho")
 
-        if(!sigUp1){
-    
-        window.location.href="../signUp_LogIn/SignUp.html"
-    
-        }else if(logIn1==="Not Authenticated"){
-            window.location.href="../signUp_LogIn/LogIn.html"
+        if (!sigUp1) {
+
+            window.location.href = "../signUp_LogIn/SignUp.html"
+
+        } else if (logIn1 === "Not Authenticated") {
+            window.location.href = "../signUp_LogIn/LogIn.html"
 
         }
-       // log in Authenticated end
+        // log in Authenticated end
 
     </script>
     <link rel="stylesheet" href="Bucket.css">
@@ -34,6 +34,9 @@
             <a href="#">Get30% off* ALL Sephora Collection. <span>Ends 4/15. **Terms apply.</span> JOIN BEAUTY
                 INSIDER</a>
             <img src="../Images/ad1.avif" alt="30%Off">
+        </div>
+        <div id="title">
+            <h2>S E P H O R A</h2>
         </div>
         <div id="headSearch">
             <div>
@@ -55,14 +58,14 @@
             <div>
                 <!-- <img src="" alt=""> -->
                 <div id="signIn">
-                    
+
                 </div>
             </div>
             <!-- <div>
                 <img src="" alt="">
                 <a href="/Sephora_Project/Bucket/Bucket.html">Bucket</a>
             </div> -->
-            <div >
+            <div>
                 <div id="userName">
                     <img src="../Images/user icon2.jpg" alt="">
                 </div>
@@ -74,7 +77,9 @@
     <!-- Header End -->
 
     <!-- Navbar Start -->
-    <div id="navBar">
+    <div id="navBar" class="buttons">
+        <a class="prev" onclick="prevButton('#nav-list')">❮</a>
+        <a class="next" onclick="nextButton('#nav-list')">❯</a>
         <ul id="nav-list">
             <li><a href="../New/New.html">New</a></li>
             <li><a href="#">Brand</a></li>
@@ -90,12 +95,31 @@
             <li><a href="#">Sale & Offers</a></li>
         </ul>
     </div>
+
+    <!-- bottom navbar -->
+    <div class="bottom-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div id="signIn1">
+                </div>
+            </li>
+            <li><a href="Bucket/Bucket.html">Bucket</a></li>
+            <li>
+                <div id="userName1">
+                    <img src="../Images/user icon2.jpg" alt="">
+                </div>
+            </li>
+        </ul>
+    </div>
     <!-- Navbar End -->
 
 
 
 
-    <h1>Cart <img id="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVkIKw4m3tR1wq4cgUv8SZLJK0Pi0VaE9j_bNVmbEtIYLn2PJbzMFd&usqp=CAE&s" alt=""></h1>
+    <h1>Cart <img id="img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVkIKw4m3tR1wq4cgUv8SZLJK0Pi0VaE9j_bNVmbEtIYLn2PJbzMFd&usqp=CAE&s"
+            alt=""></h1>
     <h3 id="cartTotal"></h3>
     <div id="cartProduct"></div>
 

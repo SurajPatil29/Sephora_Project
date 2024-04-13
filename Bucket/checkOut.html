@@ -21,7 +21,7 @@
         #productParent {
             display: flex;
             align-items: center;
-            width: 100%;
+
             margin: 50px;
             justify-content: space-evenly;
         }
@@ -40,7 +40,7 @@
         }
 
         #productParent>div:nth-child(2) {
-            max-width: 400px;
+            width: 350px;
             margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
@@ -93,6 +93,63 @@
         .minus-btn:hover,
         .plus-btn:hover {
             background-color: #ccc;
+        }
+
+        @media all and (max-width:1080px) and (min-width:720px) {
+            #productParent {
+                display: block;
+                justify-content: center;
+            }
+        }
+
+        @media all and (max-width:720px) and (min-width:481px) {
+            #productParent {
+                display: block;
+                justify-content: center;
+            }
+
+            #product>div {
+                display: block;
+                height: auto;
+                text-align: center;
+
+            }
+
+            .counter {
+                width: 100px;
+                margin: auto;
+            }
+        }
+
+
+
+        @media all and (max-width:480px) and (min-width:120px) {
+            #productParent {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                margin: 0;
+            }
+
+            #product>div {
+                display: block;
+                height: auto;
+                text-align: center;
+
+            }
+
+            #product>div img {
+                width: 100%;
+            }
+
+            #productParent .counter {
+                width: 100px;
+                margin: auto;
+            }
+
+            #productParent>div:nth-child(2) {
+                width: auto;
+            }
         }
     </style>
 </head>

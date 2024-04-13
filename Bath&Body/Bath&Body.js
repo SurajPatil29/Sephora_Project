@@ -69,6 +69,23 @@ fetch("../dataBase.json")
 // fetch data from db
 
 
+// slider prev and next button
+function prevButton(className) {
+    document.querySelector(className).scrollBy({
+        left: -document.querySelector(className).offsetWidth * 0.4, // Scrolls left
+        behavior: 'smooth'
+    });
+}
+
+function nextButton(className) {
+    document.querySelector(className).scrollBy({
+        left: document.querySelector(className).offsetWidth * 0.4, // Scrolls right
+        behavior: 'smooth'
+    });
+}
+// slider prev and next button
+
+
 // Function Price Filter Start
 function sortPrice() {
 

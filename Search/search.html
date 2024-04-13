@@ -10,17 +10,17 @@
         // log in Authenticated Start
         let sigUp1 = localStorage.getItem("userDetail")
 
-        let logIn1 =localStorage.getItem("isAutho")
+        let logIn1 = localStorage.getItem("isAutho")
 
-        if(!sigUp1){
-    
-        window.location.href="../signUp_LogIn/SignUp.html"
-    
-        }else if(logIn1==="Not Authenticated"){
-            window.location.href="../signUp_LogIn/LogIn.html"
+        if (!sigUp1) {
+
+            window.location.href = "../signUp_LogIn/SignUp.html"
+
+        } else if (logIn1 === "Not Authenticated") {
+            window.location.href = "../signUp_LogIn/LogIn.html"
 
         }
-       // log in Authenticated end
+        // log in Authenticated end
 
     </script>
     <link rel="stylesheet" href="search.css">
@@ -35,6 +35,9 @@
             <a href="#">Get30% off* ALL Sephora Collection. <span>Ends 4/15. **Terms apply.</span> JOIN BEAUTY
                 INSIDER</a>
             <img src="../Images/ad1.avif" alt="30%Off">
+        </div>
+        <div id="title">
+            <h2>S E P H O R A</h2>
         </div>
         <div id="headSearch">
             <div>
@@ -89,6 +92,23 @@
             <li><a href="#">Gift & Gift Cards</a></li>
             <li><a href="#">Buety Under $20</a></li>
             <li><a href="#">Sale & Offers</a></li>
+        </ul>
+    </div>
+
+    <!-- bottom navbar -->
+    <div class="bottom-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li>
+                <div id="signIn1">
+                </div>
+            </li>
+            <li><a href="Bucket/Bucket.html">Bucket</a></li>
+            <li>
+                <div id="userName1">
+                    <img src="../Images/user icon2.jpg" alt="">
+                </div>
+            </li>
         </ul>
     </div>
     <!-- Navbar End -->

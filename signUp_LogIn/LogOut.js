@@ -9,7 +9,7 @@ if(isAuth === "Authenticated"){
 
     let styles = `
     .logoutButton {
-        background-color: #333;
+        background-color: white;
         color: #fff;
         padding: 10px 20px;
         font-size: 16px;
@@ -19,7 +19,7 @@ if(isAuth === "Authenticated"){
     }
 
     .logoutButton:hover {
-        background-color: #0d0d0e;
+        background-color: white;
     }`;
 
     let styleElement = document.createElement("style");

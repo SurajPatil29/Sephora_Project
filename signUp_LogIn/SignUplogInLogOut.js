@@ -4,6 +4,8 @@ let logIn = localStorage.getItem("isAutho")
 
 if (!sigUp) {
     let navbar = document.querySelector("#signIn")
+    let navbar1 = document.querySelector("#signIn1")
+
     let button = document.createElement("button")
     button.className = "logoutButton";
 
@@ -14,9 +16,10 @@ if (!sigUp) {
 
     let styles = `
     .logoutButton {
-        background-color: #333;
+        background-color: white;
         padding: 10px 20px;
-        border: none;
+        border: 2px solid black;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -25,7 +28,7 @@ if (!sigUp) {
         font-size: 16px;
     }
     .logoutButton:hover {
-        background-color: #fff;
+        background-color: white;
     }`;
 
     let styleElement = document.createElement("style");
@@ -35,10 +38,14 @@ if (!sigUp) {
 
     button.appendChild(a);
 
-    navbar.appendChild(button);
+    navbar.appendChild(button.cloneNode(true));
+
+    navbar1.appendChild(button.cloneNode(true));
+
 
 } else if (logIn === "Not Authenticated") {
     let navbar = document.querySelector("#signIn")
+    let navbar1 = document.querySelector("#signIn1")
 
 
     let button = document.createElement("button")
@@ -52,6 +59,10 @@ if (!sigUp) {
         localStorage.removeItem('userDetail');
         localStorage.removeItem('isAutho');
         localStorage.removeItem('searchValue');
+        localStorage.removeItem('product');
+        localStorage.removeItem('price');
+        localStorage.removeItem('cartDetails');
+
 
         window.location.reload()
 
@@ -66,9 +77,10 @@ if (!sigUp) {
 
     let styles = `
     .logoutButton {
-        background-color: #333;
+        background-color: white;
         padding: 10px;
-        border: none;
+        border: 2px solid black;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
@@ -81,7 +93,7 @@ if (!sigUp) {
 
     }
     .logoutButton:hover {
-        background-color: #fff;
+        background-color: white;
     }`;
 
     let styleElement = document.createElement("style");
@@ -91,7 +103,10 @@ if (!sigUp) {
 
     button.appendChild(a);
 
-    navbar.append(button, button1);
+    navbar.append(button.cloneNode(true), button1.cloneNode(true));
+
+    navbar1.append(button.cloneNode(true), button1.cloneNode(true))
+
 
     
 
@@ -104,23 +119,26 @@ if (!sigUp) {
 
     if (isAuth === "Authenticated") {
         let navbar = document.querySelector("#signIn")
+        let navbar1 = document.querySelector("#signIn1")
+
         let button = document.createElement("button")
         button.innerText = "LogOut"
         button.className = "logoutButton";
 
         let styles = `
     .logoutButton {
-        background-color: #333;
+        background-color: white;
         padding: 10px 20px;
         color: 3000000;
         font-size: 16px;
-        border: none;
+        border: 2px solid black;
+        border-radius: 10px;
         cursor: pointer;
         transition: background-color 0.3s ease;
     }
     .logoutButton:hover {
-        background-color: #fff;
-        color: #000;
+        background-color: white;
+        color: black;
     }`;
 
         let styleElement = document.createElement("style");
@@ -129,9 +147,12 @@ if (!sigUp) {
 
         button.onclick = function () {
             localStorage.setItem("isAutho", "Not Authenticated")
+            console.log(1)
+
             window.location.reload()
         }
-        navbar.append(button)
+        navbar.append(button.cloneNode(true))
+        navbar1.append(button.cloneNode(true))
 
 
         // display user name
@@ -141,6 +162,20 @@ if (!sigUp) {
         console.log(1)
         name1.innerText = saveDetails.name
         userName.appendChild(name1)
+        // display user name
+
+        let styleH3=`
+            border : 2px solid white;
+            padding : 5px;
+            border-radius : 10px;
+        
+        `
+        // display user name in bottom navbar
+        let userName1 = document.querySelector("#userName1")
+        let name11 = document.createElement("h3")
+        name11.innerText = saveDetails.name
+        name11.style=styleH3
+        userName1.appendChild(name11)
         // display user name
     }
 

@@ -1,13 +1,14 @@
-#prodFilters{
+#prodFilters {
     display: grid;
-    grid-template-columns: 1fr 5fr ;
+    grid-template-columns: 1fr 5fr;
     padding-left: 50px;
     padding-right: 50px;
     gap: 20px;
     /* color: #0d0d0ee1; */
 }
 
-#horizontalslider {
+#horizontalslider,
+#horizontalparent2 {
     display: none;
 }
 
@@ -19,24 +20,25 @@
 }
 
 
-#product > div {
+#product>div {
     padding: 5px;
 }
 
 
-#product >div h4,
-#product >div p {
+#product>div h4,
+#product>div p {
     margin: 3px 0 7px 0;
 }
 
 
-#product >div p {
-font-size: 14px;
+#product>div p {
+    font-size: 14px;
 }
 
 
-#product >div h4 {
-font-size: 14px;}
+#product>div h4 {
+    font-size: 14px;
+}
 
 
 .filtButtonVertical {
@@ -45,27 +47,27 @@ font-size: 14px;}
     cursor: pointer;
     font-size: 16px;
     text-decoration: none;
-    color: #333; 
+    color: #333;
     transition: color 0.3s ease;
 }
 
 
-.filtButtonVertical:hover{
-    color: #0d0d0e; 
+.filtButtonVertical:hover {
+    color: #0d0d0e;
     text-decoration: underline;
 }
 
 
-.lable{
+.lable {
     display: block;
     font-size: 16px;
     margin-bottom: 8px;
     color: #333;
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 
-.lable:hover{
+.lable:hover {
     color: #0a0a0a;
 }
 
@@ -86,7 +88,7 @@ font-size: 14px;}
 }
 
 
-.select::after{
+.select::after {
     content: '\25BC';
     position: absolute;
     top: 50%;
@@ -118,24 +120,339 @@ font-size: 14px;}
 
 
 .buttonImg {
-    width: 20px; /* Adjust the width of the image as needed */
+    width: 20px;
+    /* Adjust the width of the image as needed */
 }
 
 button {
-    background-color: #0f140f; 
-    color: white; 
-    padding: 10px 20px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
+    background-color: #0f140f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
-
-.filtButtonHorizontal{
+.filtButtonHorizontal {
     display: flex;
     justify-content: center;
     align-items: center;
     /* height: 100vh; */
+}
+
+#horizontalparent1>.prev2,
+#horizontalparent1>.next2 {
+    display: none;
+}
+
+
+@media all and (max-width:1080px) and (min-width:720px) {
+
+    /* buttons */
+    .buttons1 {
+        flex-direction: column;
+        display: flex;
+        /* align-items: center;  */
+        justify-content: center;
+    }
+
+    .prev2,
+    .next2 {
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: auto;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        -webkit-user-select: none;
+        /* Safari */
+        user-select: none;
+
+    }
+
+    .next2 {
+        right: 15px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev2:hover,
+    .next2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* buttons */
+
+    #prodFilters {
+        display: block;
+    }
+
+    .sliders {
+        flex-grow: 1;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        gap: 5px;
+        /* width: 100%;  */
+    }
+
+    .sliders::-webkit-scrollbar {
+        /* Hide scrollbar */
+        display: none;
+    }
+
+    .sliders>h3 {
+        display: none;
+    }
+
+    .sliders>div {
+        flex: 0 0 calc(100% /7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        /* margin-right: 20px; */
+    }
+
+    #product>div:nth-child(-n+8) {
+        display: none;
+    }
+
+    #horizontalslider,
+    #horizontalparent2 {
+        display: block;
+    }
+
+    #horizontalslider {
+        display: flex;
+    }
+
+    #horizontalparent1>.prev2,
+    #horizontalparent1>.next2 {
+        display: block;
+    }
+}
+
+
+@media all and (max-width : 720px) and (min-width : 481px) {
+
+    /* buttons */
+    .buttons1 {
+        flex-direction: column;
+        display: flex;
+        /* align-items: center;  */
+        justify-content: center;
+    }
+
+    .prev2,
+    .next2 {
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: auto;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        -webkit-user-select: none;
+        /* Safari */
+        user-select: none;
+
+    }
+
+    .next2 {
+        right: 15px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev2:hover,
+    .next2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* buttons */
+
+    #prodFilters {
+        display: block;
+    }
+
+    .sliders {
+        flex-grow: 1;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        gap: 5px;
+        /* width: 100%;  */
+    }
+
+    .sliders::-webkit-scrollbar {
+        /* Hide scrollbar */
+        display: none;
+    }
+
+    .sliders>h3 {
+        display: none;
+    }
+
+    .sliders>div {
+        flex: 0 0 calc(100% /7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        /* margin-right: 20px; */
+    }
+
+    #product>div:nth-child(-n+8) {
+        display: none;
+    }
+
+    #horizontalslider,
+    #horizontalparent2 {
+        display: block;
+    }
+
+    #horizontalslider {
+        display: flex;
+    }
+
+    #horizontalparent1>.prev2,
+    #horizontalparent1>.next2 {
+        display: block;
+    }
+
+    #product {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #prodFilters {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+}
+
+@media all and (max-width : 480px) and (Min-width :120px) {
+       /* buttons */
+       .buttons1 {
+        flex-direction: column;
+        display: flex;
+        /* align-items: center;  */
+        justify-content: center;
+    }
+
+    .prev2,
+    .next2 {
+        cursor: pointer;
+        position: absolute;
+        margin-bottom: auto;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        -webkit-user-select: none;
+        /* Safari */
+        user-select: none;
+
+    }
+
+    .next2 {
+        right: 15px;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev2:hover,
+    .next2:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* buttons */
+
+    #prodFilters {
+        display: block;
+    }
+
+    .sliders {
+        flex-grow: 1;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        gap: 5px;
+        /* width: 100%;  */
+    }
+
+    .sliders::-webkit-scrollbar {
+        /* Hide scrollbar */
+        display: none;
+    }
+
+    .sliders>h3 {
+        display: none;
+    }
+
+    .sliders>div {
+        flex: 0 0 calc(100% /7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        border: 2px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        margin: 10px;
+        /* margin-right: 20px; */
+    }
+
+    #product>div:nth-child(-n+8) {
+        display: none;
+    }
+
+    #horizontalslider,
+    #horizontalparent2 {
+        display: block;
+    }
+
+    #horizontalslider {
+        display: flex;
+    }
+
+    #horizontalparent1>.prev2,
+    #horizontalparent1>.next2 {
+        display: block;
+    }
+
+    #product {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    #prodFilters {
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
 }
