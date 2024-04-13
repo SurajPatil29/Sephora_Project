@@ -1,10 +1,11 @@
-let sigUp = localStorage.getItem("userDetail")
+// script for bottom navbar
 
-let logIn = localStorage.getItem("isAutho")
+let sigUp2 = localStorage.getItem("userDetail")
 
-if (!sigUp) {
-    let navbar = document.querySelector("#signIn")
-    // let navbar1 = document.querySelector("#signIn1")
+let logIn2 = localStorage.getItem("isAutho")
+
+if (!sigUp2) {
+    let navbar = document.querySelector("#signIn1")
 
     let button = document.createElement("button")
     button.className = "logoutButton";
@@ -38,12 +39,10 @@ if (!sigUp) {
 
     navbar.appendChild(button);
 
-    //navbar1.appendChild(button.cloneNode(true));
 
 
-} else if (logIn === "Not Authenticated") {
-    let navbar = document.querySelector("#signIn")
-    // let navbar1 = document.querySelector("#signIn1")
+} else if (logIn2 === "Not Authenticated") {
+    let navbar = document.querySelector("#signIn1")
 
 
     let button = document.createElement("button")
@@ -101,7 +100,6 @@ if (!sigUp) {
 
     navbar.append(button, button1);
 
-    //navbar1.append(button.cloneNode(true), button1.cloneNode(true))
 
 
 
@@ -114,8 +112,7 @@ if (!sigUp) {
     let isAuth = localStorage.getItem("isAutho") || "Not Authenticated"
 
     if (isAuth === "Authenticated") {
-        let navbar = document.querySelector("#signIn")
-        //let navbar1 = document.querySelector("#signIn1")
+        let navbar = document.querySelector("#signIn1")
 
         let button = document.createElement("button")
         button.innerText = "LogOut"
@@ -145,31 +142,22 @@ if (!sigUp) {
             window.location.reload()
         }
         navbar.append(button)
-        //navbar1.append(button.cloneNode(true))
 
-
-        // display user name
-        let userName = document.querySelector("#userName")
-        let name1 = document.createElement("h3")
-        let saveDetails = JSON.parse(localStorage.getItem("userDetail")) || {}
-        console.log(1)
-        name1.innerText = saveDetails.name
-        userName.appendChild(name1)
-        // display user name
-
-        // let styleH3 = `
-        //     border : 2px solid white;
-        //     padding : 5px;
-        //     border-radius : 10px;
+        let styleH3 = `
+            border : 2px solid white;
+            padding : 5px;
+            border-radius : 10px;
         
-        // `;
-        // // display user name in bottom navbar
-        // let userName1 = document.querySelector("#userName1")
-        // let name11 = document.createElement("h3")
-        // name11.innerText = saveDetails.name
-        // name11.style = styleH3
-        // userName1.appendChild(name11)
-        // // display user name
+        `;
+        // display user name in bottom navbar
+        let userName1 = document.querySelector("#userName1")
+        let name11 = document.createElement("h3")
+        let saveDetails = JSON.parse(localStorage.getItem("userDetail")) || {}
+
+        name11.innerText = saveDetails.name
+        name11.style = styleH3
+        userName1.appendChild(name11)
+        // display user name
     }
 
 

@@ -11,7 +11,8 @@ if(isAuth === "Authenticated"){
     .logoutButton {
         background-color: white;
         color: #fff;
-        padding: 10px 20px;
+        padding: 7px;
+        margin : 3px;
         font-size: 16px;
         border: none;
         cursor: pointer;

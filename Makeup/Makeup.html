@@ -29,54 +29,52 @@
 
 <body>
     <!-- Header Start -->
-    <div id="navBar" class="buttons">
-        <a class="prev" onclick="prevButton('#nav-list')">❮</a>
-        <a class="next" onclick="nextButton('#nav-list')">❯</a>
 
-        <div id="headOffer">
-            <a href="#">Get30% off* ALL Sephora Collection. <span>Ends 4/15. **Terms apply.</span> JOIN BEAUTY
-                INSIDER</a>
-            <img src="../Images/ad1.avif" alt="30%Off">
-        </div>
-        <div id="title">
+
+    <div id="headOffer">
+        <a href="#">Get30% off* ALL Sephora Collection. <span>Ends 4/15. **Terms apply.</span> JOIN BEAUTY
+            INSIDER</a>
+        <img src="../Images/ad1.avif" alt="30%Off">
+    </div>
+    <div id="title">
+        <h2>S E P H O R A</h2>
+    </div>
+    <div id="headSearch">
+        <div>
             <h2>S E P H O R A</h2>
         </div>
-        <div id="headSearch">
+        <div>
+            <input id="searchValue" type="text" placeholder="🔍Search">
+            <button onclick="searchProduct()">🔍</button>
+        </div>
+        <div>
+            <a href="#">Stores & Services</a>
+        </div>
+        <div>
+            <!-- <img src="" alt=""> -->
             <div>
-                <h2>S E P H O R A</h2>
-            </div>
-            <div>
-                <input id="searchValue" type="text" placeholder="🔍Search">
-                <button onclick="searchProduct()">🔍</button>
-            </div>
-            <div>
-                <a href="#">Stores & Services</a>
-            </div>
-            <div>
-                <!-- <img src="" alt=""> -->
-                <div>
-                    <a href="#">Community</a>
-                </div>
-            </div>
-            <div>
-                <!-- <img src="" alt=""> -->
-                <div id="signIn">
-
-                </div>
-            </div>
-            <div>
-                <!-- <img src="" alt=""> -->
-                <a href="../Bucket/Bucket.html">Bucket</a>
-            </div>
-            <div>
-                <div id="userName">
-                    <img src="../Images/user icon2.jpg" alt="">
-                </div>
+                <a href="#">Community</a>
             </div>
         </div>
+        <div>
+            <!-- <img src="" alt=""> -->
+            <div id="signIn">
 
-
+            </div>
+        </div>
+        <div>
+            <!-- <img src="" alt=""> -->
+            <a href="../Bucket/Bucket.html">Bucket</a>
+        </div>
+        <div>
+            <div id="userName">
+                <img src="../Images/user icon2.jpg" alt="">
+            </div>
+        </div>
     </div>
+
+
+
     <!-- Header End -->
 
     <!-- Navbar Start -->
@@ -152,54 +150,54 @@
                 <!-- buttons end -->
                 <h3>Filter</h3>
 
-                    <div>
-                        <!-- filter for rate -->
-                        <label class="lable" for="choosePrice">Choose Price</label>
-                        <select id="choosePrice" class="select" onchange="sortPrice()">
-                            <option value="">Select</option>
+                <div>
+                    <!-- filter for rate -->
+                    <label class="lable" for="choosePrice">Choose Price</label>
+                    <select id="choosePrice" class="select" onchange="sortPrice()">
+                        <option value="">Select</option>
 
-                            <option value="1">Low To High</option>
-                            <option value="2">High to Low</option>
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
 
-                        </select>
-                    </div>
-                    <div>
-                        <!-- filter for rate -->
-                        <label class="lable" for="chooseRating">Choose Rating</label>
-                        <select id="chooseRating" class="select" onchange="sortRating()">
-                            <option value="">Select</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- filter for rate -->
+                    <label class="lable" for="chooseRating">Choose Rating</label>
+                    <select id="chooseRating" class="select" onchange="sortRating()">
+                        <option value="">Select</option>
 
-                            <option value="1">Low To High</option>
-                            <option value="2">High to Low</option>
+                        <option value="1">Low To High</option>
+                        <option value="2">High to Low</option>
 
-                        </select>
-                    </div>
-                    <div>
-                        <!-- filter for Gender -->
-                        <label class="lable" for="chooseGender">Choose Gender</label>
-                        <select id="chooseGender" class="select" onchange="sortGender()">
-                            <option value="">Select</option>
+                    </select>
+                </div>
+                <div>
+                    <!-- filter for Gender -->
+                    <label class="lable" for="chooseGender">Choose Gender</label>
+                    <select id="chooseGender" class="select" onchange="sortGender()">
+                        <option value="">Select</option>
 
-                            <option value="1">Men</option>
-                            <option value="2">Women</option>
-
-
-                        </select>
-                    </div>
-                    <div>
-
-                        <!-- filter for name -->
-                        <label class="lable" for="chooseOrder">Choose Order</label>
-                        <select id="chooseOrder" class="select" onchange="sortOrder()">
-                            <option value="">Select</option>
-
-                            <option value="1">A-Z</option>
-                            <option value="2">Z-A</option>
+                        <option value="1">Men</option>
+                        <option value="2">Women</option>
 
 
-                        </select>
-                    </div>
-                
+                    </select>
+                </div>
+                <div>
+
+                    <!-- filter for name -->
+                    <label class="lable" for="chooseOrder">Choose Order</label>
+                    <select id="chooseOrder" class="select" onchange="sortOrder()">
+                        <option value="">Select</option>
+
+                        <option value="1">A-Z</option>
+                        <option value="2">Z-A</option>
+
+
+                    </select>
+                </div>
+
 
             </div>
         </div>
@@ -218,13 +216,15 @@
                 <div class="filtButtonHorizontal">
                     <button class="customButton">
                         <span class="buttonText">Beststsellers</span> <img class="buttonImg"
-                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg" alt="">
+                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/bestsellers.svg"
+                            alt="">
                     </button>
                 </div>
                 <div class="filtButtonHorizontal">
                     <button class="customButton">
                         <span class="buttonText">Clean</span> <img class="buttonImg"
-                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg" alt="">
+                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_beauty32.svg"
+                            alt="">
                     </button>
                 </div>
                 <div class="filtButtonHorizontal">
@@ -249,13 +249,15 @@
                 <div class="filtButtonHorizontal">
                     <button class="customButton">
                         <span class="buttonText">Fragrance Quiz</span> <img class="buttonImg"
-                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg" alt="">
+                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/fragrance_quiz.svg"
+                            alt="">
                     </button>
                 </div>
                 <div class="filtButtonHorizontal">
                     <button class="customButton">
                         <span class="buttonText">Clean Fragrance Guide</span> <img class="buttonImg"
-                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg" alt="">
+                            src="https://www.sephora.com/contentimages/categorybanners/RWD/icons/clean_guide.svg"
+                            alt="">
                     </button>
                 </div>
                 <!-- buttons end -->
