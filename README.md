@@ -30,26 +30,11 @@ Out of 12 constructed pages, 8 are fully functional:
 - Enhanced User Interaction: It examines the critical aspects of user interface design, emphasizing intuitive navigation to enhance shopping experiences.
 - Attention to Detail: Meticulous replication of a renowned brand’s frontend emphasizes a keen eye for detail in web development.
 
+ <video width="40%" controls>
+        <source src="https://drive.google.com/file/d/1iUZyWSLel2BMpt_5lGguImmzf2FuUpSu/view?usp=sharing" type="video/mp4">
+</video>
 
-<h2>Screenshots & Details</h2>
-    <div>
-        <div align=left>
-            <h3>2560Pixel</h3>
-            <img src="https://github.com/SurajPatil29/Assignment_Project_1/assets/148176329/df1564b2-c622-46ce-8666-03cb7cd353e2" alt="" width="50%">
-        </div>
-        <div align=right>
-            <h3>1440Pixel</h3>
-            <img src="https://github.com/SurajPatil29/Assignment_Project_1/assets/148176329/4f56272c-777e-438a-82db-c076db38b507" alt="" width="50%">
-        </div>
-        <div align=left>
-            <h3>1024Pixel</h3>
-            <img src="https://github.com/SurajPatil29/Assignment_Project_1/assets/148176329/fe25062a-9c42-4161-80d8-72eaa93ae61e" alt="" width="50%">
-        </div>
-        <div align=right>
-            <h3>425Pixel</h3>
-            <img src="https://github.com/SurajPatil29/Assignment_Project_1/assets/148176329/116d61be-6300-4be8-bc1a-2b24f46be0fc" alt="" width="50%">
-        </div>
-    </div>
+
 
 
 # Hi, I'm Suraj ! 👋
